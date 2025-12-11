@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  transition: 0.2s all;
+}
+
+body {
+  background-color: #5cccc1;
+  margin: 0px;
+  padding: 1em;
+}
+
+main {
+}
+
+#hero-element {
+  padding: 0.2em 1em;
+  margin: 1em 0;
+  border-radius: 0.3em;
+}
+.indent {
+  padding-left: 1em;
+}
+
+#wrapper {
+  display: flex;
+  background-color: #5efc37;
+  flex-direction: column;
+  border: 0.3em dotted red;
+  padding: 1em;
+  border-radius: 1em;
+  max-width: 60em;
+  margin: 0 auto;
+}
+
+#header_logo {
+  width: 4em;
+  border-radius: 0.2em;
+}
+
+header,
+nav {
+  display: flex;
+  flex-direction: row;
+}
+nav {
+  margin-left: auto;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 1em;
+  align-items: center;
+}
+
+nav ul li {
+  background-color: #b1ff9e;
+  padding: 0.3em 0.8em;
+  border-radius: 0.3em;
+}
+
+nav ul li:hover {
+  -webkit-box-shadow: 5px 6px 4px -3px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: 5px 6px 4px -3px rgba(0, 0, 0, 0.37);
+  box-shadow: 5px 6px 4px -3px rgba(0, 0, 0, 0.37);
+
+  background-color: #ffffff;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  gap: 2em;
+}
+#content1,
+#content2,
+#content3 {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-shadow: 5px 6px 4px -3px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: 5px 6px 4px -3px rgba(0, 0, 0, 0.37);
+  box-shadow: 5px 6px 4px -3px rgba(0, 0, 0, 0.37);
+  border-radius: 0.3em;
+  padding: 1em;
+}
+
+.explore {
+  margin-top: auto;
+  text-decoration: none;
+  background-color: white;
+  padding: 0.3em 1em;
+  border-radius: 0.3em;
+  color: black;
+}
+
+.explore:hover {
+  -webkit-box-shadow: 5px 6px 4px -3px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: 5px 6px 4px -3px rgba(0, 0, 0, 0.37);
+  box-shadow: 5px 6px 4px -3px rgba(0, 0, 0, 0.37);
+}
+
+.image {
+  width: 100%;
+  height: 10em;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 1em;
+}
+
+footer {
+  margin-top: 3em;
+  padding: 0.3em 1em;
+  border-radius: 0.3em;
+}

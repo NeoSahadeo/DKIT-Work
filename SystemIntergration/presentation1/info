@@ -1,0 +1,8 @@
+
+1) Description of what the TDD process is.
+2) Explain the difference between Acceptance Test Driven Development (ATDD) and
+Unit Test Driven Development (UTDD).
+3) Worked example of the TDD process using a number of functions from the
+invoice.py app as an example.
+4) Tools you would recommend for use for TDD when developing in Python.
+5) Benefits of TDD.

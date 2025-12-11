@@ -1,0 +1,53 @@
+<section>
+  <h1>Variable Scopes in JS</h1>
+  <p>
+    There are scopes in Javascript. Where a variable is only accessible within
+    the same block scope.
+  </p>
+  <b> Globally declared variable </b>
+  <pre>
+ <code id="htmlViewer" style="color:rgb(235, 219, 178); font-weight:400;background-color:rgb(40, 40, 40);background:rgb(40, 40, 40);display:block;padding: .5em;"><span style="color:rgb(251, 73, 52); font-weight:400;">const</span> x = <span style="color:rgb(211, 134, 155); font-weight:400;">0</span>;
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(x);
+
+(<span style="color:rgb(142, 192, 124); font-weight:400;">() =&gt;</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(x);
+})();</code></pre>
+  <b> Output </b>
+  <pre>
+ <code id="htmlViewer" style="color:rgb(235, 219, 178); font-weight:400;background-color:rgb(40, 40, 40);background:rgb(40, 40, 40);display:block;padding: .5em;">0
+0</code></pre>
+
+  <b> Locally declared variable </b>
+  <pre>
+ <code id="htmlViewer" style="color:rgb(235, 219, 178); font-weight:400;background-color:rgb(40, 40, 40);background:rgb(40, 40, 40);display:block;padding: .5em;">(<span style="color:rgb(142, 192, 124); font-weight:400;">() =&gt;</span> {
+  <span style="color:rgb(251, 73, 52); font-weight:400;">const</span> y = <span style="color:rgb(211, 134, 155); font-weight:400;">0</span>;
+})();
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(y);</code></pre>
+  <b> Output </b>
+  <pre>
+ <code id="htmlViewer" style="color:rgb(235, 219, 178); font-weight:400;background-color:rgb(40, 40, 40);background:rgb(40, 40, 40);display:block;padding: .5em;">scopes_example.js:<span style="color:rgb(211, 134, 155); font-weight:400;">12</span> Uncaught ReferenceError: y <span style="color:rgb(251, 73, 52); font-weight:400;">is</span> <span style="color:rgb(251, 73, 52); font-weight:400;">not</span> defined
+    at scopes_example.js:<span style="color:rgb(211, 134, 155); font-weight:400;">12</span>:<span style="color:rgb(211, 134, 155); font-weight:400;">13</span></code></pre>
+  <b> Storing Variables in a reference object</b>
+  <p>
+    In JS there is pass-by-value and pass-by-reference. Most things are
+    pass-by-value but objects are not. We can therefore store a value in the
+    global window object provided by the browser.
+  </p>
+  <pre>
+ <code id="htmlViewer" style="color:rgb(235, 219, 178); font-weight:400;background-color:rgb(40, 40, 40);background:rgb(40, 40, 40);display:block;padding: .5em;">(<span style="color:rgb(142, 192, 124); font-weight:400;">() =&gt;</span> {
+  <span class="hljs-variable language_">window</span>.<span style="color:rgb(235, 219, 178); font-weight:400;">y</span> = <span style="color:rgb(211, 134, 155); font-weight:400;">1</span>;
+})();
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-variable language_">window</span>.<span style="color:rgb(235, 219, 178); font-weight:400;">y</span>);
+</code></pre>
+</section>
+<script
+  class="ijwt_remove"
+  src="../static/scripts/ijwt_auto.js"
+  type="module"
+></script>
+<script
+  class="ijwt_remove ijwt_url_resolve"
+  src="../static/scripts/scopes_example.js"
+  type="module"
+></script>

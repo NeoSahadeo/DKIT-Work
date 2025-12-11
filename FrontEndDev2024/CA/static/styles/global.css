@@ -1,0 +1,105 @@
+[alt="Baby Panda"] {
+  width: 300px;
+  border: 0.3em solid rgb(32, 97, 120);
+  border-radius: 0.4em;
+  -webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.42);
+  box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.42);
+  transition: 0.3s all;
+  rotate: 0deg;
+}
+
+[alt="Baby Panda"]:hover {
+  transform: scale(1.05);
+}
+
+body {
+  color: white;
+  margin: 0px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  min-height: 100dvh;
+  background-image: url("../images/background.jpg");
+  backdrop-filter: blur(8px);
+  background-color: rgba(200, 100, 185, 0.7);
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: fit-content;
+  width: fit-content;
+  padding: 1em;
+  padding-left: 4em;
+  padding-right: 4em;
+  border-radius: 1em;
+  margin: auto 0;
+  -webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.42);
+  box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.42);
+  border: 1px solid white;
+  background-color: rgba(200, 100, 185, 0.5);
+  backdrop-filter: blur(8px);
+}
+
+form {
+  background-color: rgba(32, 159, 214, 0.2);
+  backdrop-filter: blur(8px);
+  padding: 1em;
+  border-radius: 1em;
+  min-width: 400px;
+
+  -webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.42);
+  box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.42);
+}
+#sign_up_submit_button {
+  background-color: #206178;
+  color: white;
+  border: 0px;
+  padding: 0.3em 1em;
+  border-radius: 1em;
+  margin-top: 1em;
+  font-size: 1.1em;
+  transition: 0.1s all;
+}
+
+#sign_up_submit_button:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+#age {
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+}
+
+#username,
+#current_password,
+#password_confirm {
+  background-color: rgb(32, 97, 120, 0.5);
+  border: 0px;
+  border-radius: 0.3em;
+  padding: 0.3em 0.3em 0.3em 0.4em;
+  color: white;
+  transition: 0.1s all;
+}
+
+#username:hover,
+#current_password:hover,
+#password_confirm:hover,
+#username:focus,
+#current_password:focus,
+#password_confirm:focus {
+  outline: 0px;
+  border: 0px;
+
+  -webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.42);
+  box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.42);
+}

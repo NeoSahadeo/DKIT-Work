@@ -1,0 +1,16 @@
+Michael Turner%%$50000%%Web Developer
+Laura Green%%$65000%%Data Scientist
+James White%%$70000%%Network Administrator
+Elizabeth Clark%%$40000%%Sales Associate
+David Hall%%$55000%%Business Analyst
+Sophia Allen%%$60000%%HR Manager
+Daniel Young%%$80001%%UX Designer
+Olivia King%%$80000%%Cloud Architect
+Matthew Scott%%$50000%%Software Engineer
+Ava Adams%%$65000%%Project Coordinator
+Christopher Kim%%$70000%%IT Support Specialist
+Ella Nelson%%$40000%%Office Manager
+Grace Baker%%$55000%%Systems Analyst
+Henry Carter%%$60000%%Content Strategist
+Mia Edwards%%$80001%%Graphic Designer
+Lucas Turner%%$80000%%Security Analyst

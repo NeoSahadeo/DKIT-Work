@@ -1,0 +1,97 @@
+<html>
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <style rel="stylesheet">
+            table {border: 10px red solid}
+            td {border: 2px blue solid}
+            ul {
+                list-style-type: none;
+                display: flex;
+                flex-direction: row;
+            }
+            .thumbnail {
+                max-width: 50px; 
+                max-height: 50px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                margin: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- <h1>Part 1: GALLERY USING IFRAME, THUMBNAILS & BULLET POINTS</h1> -->
+
+        <iframe width="310" height="310" src="images/KFC1.jpg" name="KFC1" id="KFCImages1">
+            <p>iframes are not supported by your browser.</p>
+        </iframe><br>
+
+        <ul>
+            <li>
+                <a href="./images/KFC1.jpg" target="KFC1">
+                    <img class="thumbnail" src="./images/KFC1.jpg" />
+                </a>
+            </li>
+            <li>
+                <a href="./images/KFC2.jpg" target="KFC1">
+                    <img class="thumbnail" src="./images/KFC2.jpg" />
+                </a>
+            </li>
+            <li>
+                <a href="./images/KFC3.jpg" target="KFC1">
+                    <img class="thumbnail" src="./images/KFC3.jpg" />
+                </a>
+            </li>
+            <li>
+                <a href="./images/KFC4.jpg" target="KFC1">
+                    <img class="thumbnail" src="./images/KFC4.jpg" />
+                </a>
+            </li>
+            <li>
+                <a href="./images/KFC5.jpg" target="KFC1">
+                    <img class="thumbnail" src="./images/KFC5.jpg" />
+                </a>
+            </li>
+
+            <!-- Do the same for the other 5 images, and add the LI/A/img class="thumbnail" code here -->
+        </ul>
+
+        <hr><hr>
+
+        <h1>Part 2: GALLERY USING IFRAME, THUMBNAILS & TABLE</h1>
+
+        <iframe width="310" height="310" src="Default.png" name="./images/KFC2" id="KFC2">
+            <p>iframes are not supported by your browser.</p>
+        </iframe><br>
+
+        <table>
+            <tr>
+                <td>
+                    <a href="./images/KFC1.jpg" target="KFC2">
+                        <img class="thumbnail" src="./images/KFC1.jpg" />
+                    </a>
+                </td>
+
+                <td>
+                </td>
+
+                <td>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                </td>
+
+                <td>
+                </td>
+
+                <td>
+                </td>
+            </tr>
+        </table>
+        <body>
+</html>

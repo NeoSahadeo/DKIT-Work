@@ -1,0 +1,47 @@
+.time_stamp {
+	font-size: 0.7em;
+}
+
+.inputRange {
+	appearance: none;
+	width: 100%;
+	height: 0.4em;
+	border-radius: 9999px;
+	background: linear-gradient(90deg, #47b2ea 0%, #303030 0%);
+	cursor: pointer;
+}
+#playback_bar {
+	display: flex;
+	align-items: center;
+	gap: 1em;
+	position: absolute;
+	bottom: 6.4em;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+}
+
+.inputRange:focus {
+	outline: none;
+}
+
+/* Thumb: for Chrome, Safari, Edge */
+.inputRange::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 0px;
+	height: 0px;
+	border-radius: 10000px;
+	background: #06b6d4;
+	box-shadow: none;
+}
+
+/* Thumb: for Firefox */
+.inputRange::-moz-range-thumb {
+	width: 0px;
+	height: 0px;
+	border: 2px solid #333333;
+	border-radius: 10000px;
+	background: #06b6d4;
+	box-shadow: none;
+}

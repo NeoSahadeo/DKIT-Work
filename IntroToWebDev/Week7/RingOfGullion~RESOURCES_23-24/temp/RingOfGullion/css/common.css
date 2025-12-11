@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-image: url("../images/Screenshot from 2023-09-30 18-25-14.png");
+}
+
+#wrapper {
+    min-width: 600px;
+    max-width: 1000px;
+    text-align: left;
+    margin: auto;
+    background: #dddddd;
+}
+
+header{
+    width: 100%;
+    text-align: center;
+    vertical-align: center;
+}
+
+nav {
+    background-color: white;
+    float: left;
+    border-style: outset;
+    border-width: 0.5em;
+}
+a {
+    display: block;
+    margin: 0.3em;
+}
+
+article {
+    margin-left: 12em;
+    padding-left: 1em;
+    border-left: 0.1em solid green;
+}
+
+#gullionImage{
+    float: right;
+    margin: 0 0 1em 1em;
+}
+
+h2, h3 {
+    background-color: red;
+}
+h2 {
+    font-size: 2em;
+    letter-spacing: 0.4em;
+    text-indent: 1em;
+}
+h3 {
+    width: 20em;
+    padding-left: 1em;
+}
+
+address{
+    text-align: center;
+    font: small-caps 0.8em sans-serif;
+    border-top: 0.5em double green;
+    padding-top: 1em;
+}
+
+#section2 ul{
+   list-style-image: url("../images/favicon.ico"); 
+}

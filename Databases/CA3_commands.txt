@@ -1,0 +1,251 @@
+------------------
+-- CA 3         --
+-- Omotayo, Neo --
+------------------
+
+
+-- Create the tables
+
+-- (Customer ID, Customer Name, Customer Address, Customer Telephone Number)
+create table customers (
+	customer_id int primary key,
+	name varchar(50),
+	address varchar(100),
+	phone_number varchar(17) -- 17 is the longest possbile phone number (North Korea)
+);
+
+-- (Supplier ID, Supplier Name, Supplier Address, Supplier Telephone Number)
+create table suppliers (
+	supplier_id int primary key,
+	name varchar(100),
+	address varchar(100),
+	phone_number varchar(17) -- 17 is the longest possbile phone number
+);
+
+-- (Product ID, Product Name, Product Price, Quantity in Stock, Supplier ID)
+create table products (
+	product_id int primary key,
+	supplier_id int,
+	name varchar(100),
+	price decimal(10, 2),
+	stock int,
+	foreign key (supplier_id) references suppliers(supplier_id)
+);
+
+-- (Order ID, Order Date, Customer ID)
+create table orders (
+	order_id int primary key,
+	customer_id int,
+	foreign key (customer_id) references customers(customer_id),
+	order_date date
+);
+
+
+-- (Order ID, Product ID, Quantity Ordered)
+create table invoice (
+	order_id int,
+	product_id int,
+	quantity_ordered int,
+	primary key (order_id, product_id),
+	foreign key (order_id) references orders (order_id),
+	foreign key (product_id) references products (product_id)
+);
+
+-- EOF of create tables
+
+-- Start of creating data
+insert into customers
+values
+(1, "Neo", "DKIT", "0873569210"),
+(2, "Brian", "456 Oak Ave", "0862345678"),
+(3, "Charlie", "789 Pine Rd", "0873456789"),
+(4, "Diana", "321 Birch Blvd", "0884567890"),
+(5, "Ethan", "654 Cedar Ct", "0895678901");
+
+insert into suppliers
+values
+(1, "Tech Innovations", "123 Silicon St", "0851234567"),
+(2, "Green Gardens", "456 Floral Ave", "0862345678"),
+(3, "Culinary Delights", "789 Gourmet Rd", "0873456789"),
+(4, "Fitness Hub", "321 Active Blvd", "0884567890"),
+(5, "Creative Solutions", "654 Design Ct", "0895678901");
+
+insert into products
+values
+(101, 1, "Wireless Mouse", 29.99, 150),
+(102, 2, "Bluetooth Headphones", 49.99, 80),
+(103, 3, "USB-C Charger", 19.99, 200),
+(104, 4, "Mechanical Keyboard", 89.99, 60),
+(105, 5, "Gaming Monitor", 299.99, 30),
+(106, 1, "Webcam", 59.99, 120),
+(107, 2, "External Hard Drive", 79.99, 75),
+(108, 3, "Smartphone Stand", 24.99, 100),
+(109, 4, "Laptop Sleeve", 39.99, 90),
+(110, 5, "Fitness Tracker", 59.99, 50),
+(111, 1, "Bluetooth Speaker", 89.99, 45),
+(112, 2, "Bluetooth Earbuds", 79.99, 70),
+(113, 3, "Bluetooth Adapter", 29.99, 50),
+(114, 4, "Bluetooth Fitness Tracker", 99.99, 30),
+(115, 5, "Bluetooth Smartwatch", 199.99, 25);
+
+insert into orders
+values
+(201, 1, '2025-01-15'),
+(202, 2, '2025-02-20'),
+(203, 3, '2025-03-05'),
+(204, 4, '2025-04-10'),
+(205, 5, '2025-05-25'),
+(206, 1, '2025-06-30'),
+(207, 2, '2025-07-15'),
+(208, 3, '2025-08-20'),
+(209, 4, '2025-09-05'),
+(210, 5, '2025-10-10'),
+(211, 3, '2025-05-25'),
+(212, 1, '2025-04-10'),
+(213, 5, '2025-03-05'),
+(214, 2, '2025-01-15'),
+(215, 4, '2025-02-20'),
+(216, 1, '2025-06-30'),
+(217, 5, '2025-10-10'),
+(218, 3, '2025-07-15'),
+(219, 4, '2025-09-05'),
+(220, 2, '2025-08-20');
+
+insert into invoice
+values
+(201, 101, 2),
+(202, 102, 1),
+(203, 103, 4),
+(204, 104, 1),
+(204, 109, 1),
+(204, 103, 3),
+(205, 105, 3),
+(206, 106, 5),
+(207, 107, 2),
+(208, 108, 1),
+(209, 109, 2),
+(210, 110, 1),
+(211, 111, 1),
+(211, 110, 3),
+(211, 101, 2),
+(212, 105, 3),
+(213, 113, 4),
+(214, 104, 2),
+(215, 115, 5),
+(216, 112, 1),
+(217, 101, 1),
+(218, 108, 2),
+(218, 111, 6),
+(218, 104, 1),
+(219, 114, 2),
+(220, 102, 1);
+
+-- EOF creating data
+
+-- Queries
+alter table invoice rename to orders_products;
+
+-- Query 1
+select * from products where name like "%Bluetooth%";
+--
+
+-- Query 2
+select * from products where price < 100 order by stock;
+--
+
+-- Query 3
+select * from orders where month(order_date) >= 03 and month(order_date) <= 05;
+--
+
+-- Query 4
+update products
+set stock = 0
+where name="Gaming Monitor" or name="Webcam" or name="USB-C Charger";
+--
+
+-- Query 5
+-- insert into table a column to check if a product is in stock
+alter table products add in_stock varchar(1);
+alter table products modify in_stock enum("t","f");
+
+-- update the table rows to have true of false in the in_stock column
+update products
+set in_stock = "t"
+where stock > 0;
+
+update products
+set in_stock = "f"
+where stock = 0;
+--
+
+-- Query 6
+-- use a check to see if product is in stock using the column above where its above 40euro
+select * from products where in_stock = "f" and price > 40.00;
+--
+
+-- Query 7
+select
+concat( -- concat joins the 2 strings together
+	substring_index(name, ' ', 1), -- select the first word of the company before the space
+	substring(name, locate(' ', name) + 1, 1) -- select the letter after the first space
+) as "Short Supplier Name" -- shows the column
+from suppliers;
+--
+
+
+-- Query 8
+select quantity_ordered, order_id  as "Bluetooth Device Order ID" from orders_products
+where product_id in ( -- subquery
+	select product_id from products
+	where name like "%Bluetooth%"
+);
+--
+
+-- Query 9
+select name,
+if (phone_number like "%087%", "yes", "no")
+as "Vodafone Numbers"
+from customers;
+--
+
+-- Query 10
+select distinct name as "Products Out of Stock" from products
+join orders_products using (product_id)
+where in_stock = "f";
+--
+
+
+-- orders_products / Invoice
+select orders_products.order_id as "Order ID",
+customers.address as "Customer Address",
+customers.phone_number as "Customer Phone Number",
+customers.name as "Customer Name",
+orders.order_date as "Ordered Date",
+sum(products.price * orders_products.quantity_ordered) as "Total Cost",
+sum(orders_products.quantity_ordered) as "Items Ordered"
+from orders_products
+inner join products on products.product_id = orders_products.product_id
+inner join orders on orders.order_id = orders_products.order_id
+inner join customers on customers.customer_id = orders.customer_id
+group by orders_products.order_id -- grouped by order_id and summed the total cost of individual order for that invoice (orders_products)
+order by customers.name;
+--
+
+
+-- Supplier low in stock
+select suppliers.name as "Supplier Name",
+suppliers.address as "Address",
+suppliers.phone_number as "Phone Number",
+products.name as "Product Name",
+products.product_id as "Product ID",
+products.stock as "Product Stock"
+from suppliers
+inner join products on products.supplier_id = suppliers.supplier_id
+where products.stock in (
+	select stock from products
+	where stock < 40 -- This is the restock point
+)
+order by suppliers.name;
+--
+
+-- EOF of Queries

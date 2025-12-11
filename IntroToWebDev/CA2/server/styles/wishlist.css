@@ -1,0 +1,77 @@
+form {
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    margin: 0 7rem;
+    margin-top: 2rem;
+    border-radius: 0.4rem;
+    padding: 1rem;
+    font-family: var(--normal-font);
+    max-width: 742px;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.formButton {
+    padding: 0.4rem 0.5rem;
+    border: 0px;
+    transition: 0.2s ease-in-out;
+    background-color: var(--color-light-red);
+    color: var(--color-dark-red);
+    border-radius: 0.1rem;
+}
+.formButton:hover {
+    background-color: var(--color-green);
+    color: var(--color-dark-green);
+}
+#goodThingsTextarea {
+    max-width: 100%;
+    width: 100%;
+}
+textarea {
+    resize: none;
+    /* font-size: 3rem; */
+    padding: 0.3rem;
+}
+.inputContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0.4rem 0;
+}
+.normalLabel {
+    width: 10rem;
+}
+.defaultInput {
+    width: 100%;
+    max-width: 300px;
+}
+[type=submit]{
+    background-color: var(--color-blue);
+    color: var(--color-black);
+}
+.checkbox {
+    margin-right: 0.4rem;
+}
+.checkboxDialogue {
+    display: block;
+    height: 100%;
+}
+input {
+    transition: 0.1s ease-out;
+    border-radius: 0.3rem;
+    border: 0.01rem solid grey;
+    height: 2rem;
+}
+input:hover {
+    transform: scale(1.01);
+}
+#goodSliderFeedback {
+    background-color: var(--color-green);
+    padding: 0.2rem 0.4rem;
+    margin-left: 0.1rem;
+    border-radius: 1rem;
+}

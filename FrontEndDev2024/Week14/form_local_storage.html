@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Form Using Local Storage</title>
+
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <h1>Form using Local Storage</h1>
+      </header>
+
+      <article>
+        <h2>Click Submit to save inputs in browser Local Storage</h2>
+
+        <form onsubmit="return submit_form(this)" action="action.html">
+          <label>Your Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter Your name"
+            required
+          /><br />
+          <br />
+          <label>Your password:</label>
+          <input
+            type="password"
+            id="password"
+            name="current-password"
+            placeholder="Enter Your password"
+            required
+          />
+          <br />
+          <br />
+
+          <label> </label>
+          <input type="submit" value="Submit to Local Storage" />
+        </form>
+      </article>
+
+      <footer>&copy; Peter Gosling x Neo Sahadeo</footer>
+    </main>
+    <script src="scripts/local_storage.js"></script>
+    <script>
+      function submit_form(form) {
+        const form_data = new FormData(form);
+        const password = form_data.get("current-password");
+        if (password_checker(password)) {
+          cache_control({
+            method: "set",
+            name: "name",
+            data: form_data.get("name"),
+          });
+          cache_control({ method: "set", name: "password", data: password });
+          return true;
+        }
+        return false;
+      }
+    </script>
+  </body>
+</html>

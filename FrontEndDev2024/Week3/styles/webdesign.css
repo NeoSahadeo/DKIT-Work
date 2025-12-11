@@ -1,0 +1,17 @@
+#web-image1,
+#web-image2,
+#web-image3 {
+  width: 100%;
+  height: 8em;
+  border-radius: 0.4em;
+  background-color: yellow;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#web-image1 {
+  background-image: url("../images/web-intro.webp");
+}
+#web-image2 {
+  background-image: url("../images/more-web.webp");
+}

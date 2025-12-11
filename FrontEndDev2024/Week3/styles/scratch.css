@@ -1,0 +1,20 @@
+#scratch-image1,
+#scratch-image2,
+#scratch-image3 {
+  width: 100%;
+  height: 8em;
+  border-radius: 0.4em;
+  background-color: yellow;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#scratch-image1 {
+  background-image: url("../images/scratch-intro.webp");
+}
+#scratch-image2 {
+  background-image: url("../images/more-scratch.webp");
+}
+#scratch-image3 {
+  background-image: url("../images/further-scratch.webp");
+}

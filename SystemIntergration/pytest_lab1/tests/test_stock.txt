@@ -1,0 +1,2 @@
+pencil, 0.15
+calculator, 10.0

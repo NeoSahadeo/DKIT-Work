@@ -1,0 +1,53 @@
+<section>
+  <h1>Adding an image with JS</h1>
+  <p>Images in HTML can be added in two main ways:</p>
+  <ul>
+    <li><a href="#url_backgrounds">URL Backgrounds</a></li>
+    <li><a href="#image_tags">Image tags</a></li>
+  </ul>
+</section>
+<section id="url_backgrounds">
+  <h1>URL Backgrounds</h1>
+  <p>
+    Images that are applied with URL backgrounds are the easiest way to have
+    consitent styles in my opinion.
+  </p>
+  <pre>
+ <code id="htmlViewer" style="color:rgb(235, 219, 178); font-weight:400;background-color:rgb(40, 40, 40);background:rgb(40, 40, 40);display:block;padding: .5em;"><span style="color:rgb(251, 73, 52); font-weight:400;">const</span> image_element = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span style="color:rgb(184, 187, 38); font-weight:400;">&quot;div&quot;</span>);
+<span style="color:rgb(251, 73, 52); font-weight:400;">const</span> image_element_style = image_element.<span style="color:rgb(235, 219, 178); font-weight:400;">style</span>;
+
+image_element_style.<span style="color:rgb(235, 219, 178); font-weight:400;">backgroundImage</span> = <span style="color:rgb(184, 187, 38); font-weight:400;">`url(<span style="color:rgb(235, 219, 178); font-weight:400;">${ijwt.url_string_resolver(<span style="color:rgb(184, 187, 38); font-weight:400;">&quot;/static/images/starry_boat.jpg&quot;</span>)}</span>)`</span>;
+image_element_style.<span style="color:rgb(235, 219, 178); font-weight:400;">width</span> = <span style="color:rgb(184, 187, 38); font-weight:400;">&quot;100%&quot;</span>;
+image_element_style.<span style="color:rgb(235, 219, 178); font-weight:400;">paddingTop</span> = <span style="color:rgb(184, 187, 38); font-weight:400;">&quot;100%&quot;</span>;
+image_element_style.<span style="color:rgb(235, 219, 178); font-weight:400;">backgroundPosition</span> = <span style="color:rgb(184, 187, 38); font-weight:400;">&quot;center&quot;</span>;
+image_element_style.<span style="color:rgb(235, 219, 178); font-weight:400;">backgroundSize</span> = <span style="color:rgb(184, 187, 38); font-weight:400;">&quot;cover&quot;</span>;
+
+<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span style="color:rgb(184, 187, 38); font-weight:400;">&quot;image_example_1&quot;</span>)?.<span class="hljs-title function_">appendChild</span>(image_element);</code></pre>
+  <div id="image_example_1" style="display: contents"></div>
+</section>
+<section id="image_tags">
+  <h1>Image Tags</h1>
+  <p>
+    Image tags are the standard way of adding images to HTML. The downside is
+    that it's harder to adjust the image ratios and apply filters.
+  </p>
+  <pre>
+ <code id="htmlViewer" style="color:rgb(235, 219, 178); font-weight:400;background-color:rgb(40, 40, 40);background:rgb(40, 40, 40);display:block;padding: .5em;"><span style="color:rgb(251, 73, 52); font-weight:400;">const</span> image_tag = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span style="color:rgb(184, 187, 38); font-weight:400;">&quot;img&quot;</span>);
+image_tag.<span style="color:rgb(235, 219, 178); font-weight:400;">src</span> = ijwt.<span class="hljs-title function_">url_string_resolver</span>(<span style="color:rgb(184, 187, 38); font-weight:400;">&quot;/static/images/starry_boat.jpg&quot;</span>);
+image_tag.<span style="color:rgb(235, 219, 178); font-weight:400;">alt</span> = <span style="color:rgb(184, 187, 38); font-weight:400;">&quot;Starry Boat&quot;</span>;
+image_tag.<span style="color:rgb(235, 219, 178); font-weight:400;">style</span>.<span style="color:rgb(235, 219, 178); font-weight:400;">width</span> = <span style="color:rgb(184, 187, 38); font-weight:400;">&quot;100%&quot;</span>;
+
+<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span style="color:rgb(184, 187, 38); font-weight:400;">&quot;image_example_2&quot;</span>)?.<span class="hljs-title function_">appendChild</span>(image_tag);
+</code></pre>
+  <div id="image_example_2" style="display: contents"></div>
+</section>
+<script
+  class="ijwt_url_resolve"
+  src="/static/scripts/image_example.js"
+  type="module"
+></script>
+<script
+  class="ijwt_remove"
+  src="../static/scripts/ijwt_auto.js"
+  type="module"
+></script>

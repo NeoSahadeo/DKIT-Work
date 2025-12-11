@@ -1,0 +1,10 @@
+FROM gitlab/gitlab-runner:alpine
+
+RUN <<EOF
+gitlab-runner register \
+--non-interactive \
+--url https://gitlab.comp.dkit.ie \
+--token glrt-cFqS3UdKQMhwTpUXUinU \
+--executor "docker" \
+--docker-image python \
+EOF

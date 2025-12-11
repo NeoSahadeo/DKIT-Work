@@ -1,0 +1,11 @@
+##[pylyzer] failed /home/neosahadeo/Documents/Projects/DKIT/IntroToProgramming/2025/CA5/code/utils.py 1741199363 2745
+.math: Never
+
+.turtle: Never
+
+.PADDING_X: {0.1}
+.PADDING_Y: {0.1}
+.get_screen: () -> global::Tuple([Never, Never])
+.get_tile_size: () -> Never
+.conv_gpos: (pos: global::Indexable(Obj, Float)) -> global::Tuple([Never, Never])
+.conv_spos: (pos: global::Indexable(Obj, Never)) -> global::Tuple([Never, Float])

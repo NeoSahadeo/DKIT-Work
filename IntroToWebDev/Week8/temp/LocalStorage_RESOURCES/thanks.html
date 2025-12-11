@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		
+		<title>Form LocalStorage</title>
+		
+		<link rel="stylesheet" type="text/css" href="styles/centre.css" />
+	</head>
+	
+	<body onload="readLocalStorage()">
+		<main>
+			<header>
+				<h1>Form with Local Storage: Page 2</h1>
+				<h1><u>READING from</u> LOCAL STORAGE</h1>
+			</header>
+			
+			<article>
+				<h2>Saving the Form Information into the Browser Memory: LOCAL STORAGE</h2>	
+				
+				<label>Your Name:</label>
+				<span id="theName"></span>
+				<br><br>
+
+				<label>Your Age (years):</label>
+				<span id="theAge"></span>
+				<br><br>
+					
+				<label>From Where:</label>
+				<span id="theCountry"></span>
+				<br><br>
+
+				<label>Email Address:</label>
+				<span id="theEmail"></span>
+				<br><br>
+
+				<label>Favourite Day:</label>
+				<span id="favouriteDay"></span>
+				<br><br>
+
+				<label>Favourite Colour:</label>
+				<span id="favouriteColour"></span>
+				<br><br>
+
+				<label>Best Ice cream Flavour:</label>
+				<span id="vanilla"></span>
+				<br><br>
+			</article>
+			
+			<footer>
+				&copy;
+				<script>
+					var rightNow = new Date();
+					var currentYear = rightNow.getFullYear();
+					document.write(currentYear);
+				</script>
+				 Philip McGuinness
+			</footer>
+ 		</main>
+		
+		<script src="scripts/Local_Storage.js"></script>
+	</body>
+</html>
+

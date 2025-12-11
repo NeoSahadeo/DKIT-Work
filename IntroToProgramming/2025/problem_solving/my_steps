@@ -1,0 +1,45 @@
+Steps:
+
+1. Think of function name = find_high
+
+2. Add parameters to the function as it should take in a list
+
+3. Think about going through each element comparing each value with the previous
+   to see which is highest
+
+4. Think about a way to implement that
+4.1. For-loops work well with this, loop through using that. Storing the highest
+		 variable in it's own variable called "highest"
+4.2. Use a if-statement to compare it
+
+5. Return the "highest" variable
+
+PSEUDO:
+
+FUNCTION find_high(LIST_Of_NUMBERS) DO
+	highest = 0
+	FOR X IN LIST_Of_NUMBERS THEN
+		IF X > highest THEN
+			highest = X
+		ENDIF
+	ENDFOR
+	RETURN highest
+END find_high
+
+6. Refine
+6.1 If the number is negative the function does not work
+6.2 Change highest to start from the first element in the list rather than 0
+
+7.
+
+PSEUDO:
+
+FUNCTION find_high(LIST_Of_NUMBERS) DO
+	highest = LIST_Of_NUMBERS[0]
+	FOR X IN LIST_Of_NUMBERS THEN
+		IF X > highest THEN
+			highest = X
+		ENDIF
+	ENDFOR
+	RETURN highest
+END find_high

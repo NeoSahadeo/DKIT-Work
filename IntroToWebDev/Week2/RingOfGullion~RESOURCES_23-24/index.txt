@@ -1,0 +1,39 @@
+Ring of Gullion Home Page
+
+<img src="RingOfGullionBanner.png" alt="The Ring Of Gullion banner image" />
+
+<a href="index.html">Home</a>
+<a href="history.html">History</a>
+<a href="culture.html">Culture</a>
+
+Welcome
+
+<img src="RingOfGullionMap.jpg" alt="Map of the Ring of Gullion" id="gullionImage" />
+
+Welcome to the Ring of Gullion website. It is only 5 miles north of Dundalk: the most varied landscape in Ireland. Awesomely steep hills honeycombed with the twistiest roads in Ireland are only a 90-minute walk from DkIT. Look north to see these formidable mountains that stopped the Normans in their tracks and kept Ulster the most Gaelic part of Ireland 400 years longer than the rest of the island.
+
+Why is the Ring of Gullion so magical? Where do I start: it is the stubborn remains of a <b>volcano</b>: not just a straightforward vent (which Slieve Gullion is), but the outer circular ring of hills are a <b>ring-dyke</b>. As the magma was forcing its way upwards, it cracked the surrounding rocks. This circular crack filled with magma which cooled about 60 million years ago. It formed a hard granite which the ice wasn't able to erode, so the granitic Ring of Gullion sits proudly above its circular valley. The pressure from the ice (when Ireland was covered by ice about 10 thousand years ago) eroded gaps in the Ring, so we have roads and rail through these gaps at the Carrickdale Hotel, Moyry Castle (the Gap of the North), Cloghogue, Camlough, and Forkill, to name a few.
+
+Today, landscapes like the Ring of Gullion are being formed in volcanically-active zones such as Iceland, Hawaii, the Western Rockies, Mexico stretching all the way down the Andes, and across the far side of the Pacific to New Zealand, the Philippines, Japan and Alaska. Geologists from all over the world come to study this special landscape right on our doorstep.
+
+When you travel from Louth into the Ring of Gullion, you immediately notice that you are surrounded by mountains. Your horizon shrinks to about 5 miles. But if you take the trouble to travel up any of the hilly roads that exit the Ring, the views are fantastic. Each hill in the Ring has its own characteristic shape: gentle heather-clad Cashel Mountain or the Mount-Fuji-like conical peak of Sturgan Mountain or the bare stark hemisphere of Mullaghbane Mountain. Because the Ring is so small, these mountains change their profile as you travel. You will not be bored!
+
+We all hope to see you soon, footering around the Ring of Gullion.
+
+&mdash; C&uacute; Chulainn
+
+Hours
+
+The Ring of Gullion: never closes!
+Slieve Gullion: also never closes, but the road around it closes around nightfall.
+
+Directions
+
+From the North (Belfast): Take the M1 West, then take the A1 South, bypass Newry travelling towards Dublin. When you are at Cloghogue church, you have entered the Ring.
+From the South (Dundalk): travel North to either Forkill or the Carrickdale Hotel. When you get there, you have entered the Ring of Gullion.
+From the East (Carlingford): go to Omeath. Take the road up to the transmitter at Clermont Carn. As you climb, you are entering the ring of Gullion.
+From the West (Castleblayney): Head to Crossmaglen, then Silverbridge, then on the B30 to Newry. When you get to Cashel Lakes, you are entering the ring of Gullion.
+
+<address>
+Setanta, &nbsp;&#9728;&nbsp; c/o Culainn the Blacksmith, &nbsp;&#9728;&nbsp; The Forge, &nbsp;&#9728;&nbsp; The Lake at the Top, &nbsp;&#9728;&nbsp; Slieve Gullion, &nbsp;&#9728;&nbsp; County Armagh, &nbsp;&#9728;&nbsp; Ireland
+</address>

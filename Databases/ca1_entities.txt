@@ -1,0 +1,7 @@
+TechSupply -> Company
+Entities:
+	Customers -- done
+	Products -- done
+	Order/Invoice -- done-ish
+	Inventory -- done
+	Supplier -- done

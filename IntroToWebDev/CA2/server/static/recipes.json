@@ -1,0 +1,41 @@
+[
+    {
+        "name": "Turkey Dinner",
+        "cook_time": "3 hours",
+        "picture": "../static/wholesomeyum-Easy-Roasted-Thanksgiving-Turkey-Recipe-45.jpg",
+        "cite":"https://www.wholesomeyum.com/easy-garlic-butter-herb-roasted-turkey-recipe/",
+        "id": 0,
+        "description": "Scrumptious, tender, and juicy turkey recipe.",
+        "ingredients": [
+            "Turkey",
+            "Salt",
+            "Pepper"
+        ],
+        "instructions": [
+            "Kill Turkey",
+            "Cook Turkey"
+        ]
+    },
+    {
+        "name": "Gingerbread Men",
+        "cook_time": "40 min",
+        "picture": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/gingerbread_man-97cba8c.jpg?quality=90&webp=true&resize=375,341",
+        "cite":"https://www.bbcgoodfood.com/recipes/gingerbread-men-0",
+        "id": 1,
+        "description": "Little Cookie Men. They were forged in the fires of the Golden Furnace by the Maniacic Muffin Man. Cursed with a conscious, the gingerbread men flavour is intensified with the thoughts of torment. PERFECT for the winter and Christmas season. ",
+        "ingredients": [
+            "225g plain flour",
+            "Salt",
+            "2tsp bicarbonate of soda",
+            "75g unsalted butter",
+            "100g soft brown sugar",
+            "100g golden syrup",
+            "Cinnamon",
+            "Ground ginger"
+        ],
+        "instructions": [
+            "Find Men",
+            "Convert to gingerbread"
+        ]
+    }
+]

@@ -1,0 +1,137 @@
+# Saving
+copy running-config startup-config
+##################################
+
+
+# Goes to user mode
+enable
+
+# Goes to admin mode
+configure terminal
+
+# Change hostname
+hostname SW-1
+
+
+# Privilege secret password
+enable secret class
+
+# Configure console password
+line console 0
+password cisco
+login
+
+
+# Setting VTY password
+line vty 0
+password letmein
+login
+
+
+# Encrypt password
+service password-encryption
+
+# MOTD
+banner motd #Unauthorised Access is Prohibited!#
+
+# VLAN 1 IP CONFIG
+interface vlan 1
+ip address 192.168.1.254 255.255.255.0
+no shutdown
+
+
+####### Question 5
+# Switch 2 config
+enable
+configure terminal
+hostname SW-2
+interface vlan 1
+ip address 192.168.1.253 255.255.255.0
+
+
+# Question 7
+# Configre VLAN Tables - do for both SW-1 and SW-2
+enable
+configure terminal
+vlan 200
+name Admin
+vlan 201
+name Student
+vlan 202
+name Staff
+
+# Switch 2
+enable
+configure terminal
+vlan 200
+name Admin
+vlan 201
+name Student
+vlan 202
+name Staff
+
+
+# Check if it worked
+show vlan brief
+
+# Assigns Interfaces to VLans, Question 8
+enable
+configure terminal
+interface range f0/1-2
+switchport mode access
+switchport access vlan 200
+
+interface range f0/3-4
+switchport mode access
+switchport access vlan 201
+
+interface range f0/5-6
+switchport mode access
+switchport access vlan 202
+
+# Switch 2
+enable
+configure terminal
+interface range f0/1-2
+switchport mode access
+switchport access vlan 200
+
+interface range f0/3-4
+switchport mode access
+switchport access vlan 201
+
+interface range f0/5-6
+switchport mode access
+switchport access vlan 202
+
+
+# Question 9, set the g0/1 to permit all vlan  traffic
+# Switch 2
+enable
+configure terminal
+interface g0/1
+switchport mode trunk
+switchport trunk allowed vlan all
+
+
+# Switch 1
+enable
+configure terminal
+interface g0/1
+switchport mode trunk
+switchport trunk allowed vlan all
+
+
+
+------------
+# 12. Indicate why some of them failed
+
+Staff PC2 -> Student PC2
+Failed because they are on different VLANS
+
+
+Staff PC3 -> SW-2
+Switch is not on the same VLAN as PC3
+
+Admin PC1 -> Staff PC2
+Different Vlans again

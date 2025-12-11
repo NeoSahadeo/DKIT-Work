@@ -1,0 +1,25 @@
+<section>
+  <h1>Editing <span class="example_1_change">Properties</span> with JS</h1>
+  <p>
+    Javscript can be used to change the
+    <span class="example_1_change">Properties</span> of an element.
+  </p>
+  <p>Type something in the box and watch the word "Properties" change.</p>
+  <textarea oninput="example_1(this)"></textarea>
+  <br />
+  <input oninput="example_2(this)" type="color" />
+</section>
+<script class="ijwt_remove">
+  function example_1(e) {
+    const changes = document.querySelectorAll(".example_1_change");
+    changes.forEach((c) => (c.innerHTML = e.value));
+  }
+  function example_2(e) {
+    document.body.style.backgroundColor = `${e.value}`;
+  }
+</script>
+<script
+  class="ijwt_remove"
+  src="../static/scripts/ijwt_auto.js"
+  type="module"
+></script>

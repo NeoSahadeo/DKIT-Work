@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Bikes | HOME</title>
+        <link rel="stylesheet" href="static/global.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(e) {
+                $('#header').load('./header.html')
+            })
+            $(document).ready(function(e) {
+                $('#footer').load('./footer.html')
+            })
+        </script>
+    </head>
+    <body>
+        <div id="header"></div>
+        <main class="center-main">
+            <form action="post" onsubmit="preventDefault">
+                <div class="form-layout">
+                <h2 style="margin-left: auto; margin-right: auto;">Create a tail</h2>
+                    <div>
+                        <label class="form-label" for="trail_name">
+                            Trail name
+                        </label>
+                        <input class="form-input" name="trail_name" placeholder="Trail name">
+                    </div>
+                    <div>
+                        <label class="form-label" for="trail_length">
+                            Trail length
+                        </label>
+                        <input class="form-input" name="trail_length" placeholder="Trail length">
+                    </div>
+                    <button class="submit-button" type="submit">CREATE !</button>
+                </div>
+            </form>
+        </main>
+        <div id="footer"></div>
+    </body>
+</html>

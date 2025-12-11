@@ -1,0 +1,19 @@
+# Install
+pytest
+pytest-cov
+pytest-html
+
+
+# Generate the HTML report
+pytest --html=[FILE_OUTPUT.html]
+
+# Generate the coverage report
+pytest --cov=[FOLDER_NAME] --cov-report html
+
+# Fixtures
+@pytest.fixture
+# parameter should have the same name as the func
+# name
+
+# Parameters
+@pytest.mark.parametrize("input, expected", [()...])

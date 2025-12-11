@@ -1,0 +1,139 @@
+* {
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+  background-color: #578eff;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 300px;
+  max-width: 1000px;
+  background-color: #96ff57;
+  margin: 3em 3em;
+  border-radius: 2em;
+  border: 0.5em dotted #ff5757;
+  padding: 1em 0;
+}
+#header-logo div {
+  width: 4.5em;
+  height: 4.5em;
+}
+#header-logo div {
+  background-image: url("../images/code_club_logo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1em;
+  margin-right: 1em;
+  padding: 0 1em;
+}
+header nav {
+  width: fit-content;
+  margin-left: auto;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+header nav ul li {
+  background-color: white;
+  padding: 0.3em 0.5em;
+  border-radius: 0.135em;
+  list-style-type: none;
+  outline: 0.03em solid black;
+}
+
+header nav ul li:hover,
+header nav ul li a:hover {
+  background-color: #dcdcdc;
+  color: red;
+}
+
+#hero-element {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 80%;
+  background-color: #f500ff;
+  padding: 1em 1em;
+  border-radius: 1em;
+  outline: 0.1em solid black;
+  margin-top: 2em;
+}
+
+#hero-element h1 {
+  font-size: 1.3em;
+}
+#hero-element p {
+  font-size: 1em;
+  margin-top: 0.4em;
+  margin-left: 1em;
+  margin-left: 1em;
+}
+
+#projects {
+  margin: 3em 1em 0 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 1em;
+}
+#projects > * {
+  border-radius: 1em;
+  padding: 1em 1em;
+  flex-basis: auto;
+}
+
+#projects * > h2 {
+  font-size: 1.2em;
+  margin-top: 1em;
+}
+#projects * > p {
+  margin-top: 0.2em;
+}
+
+section#content1,
+section#content2,
+section#content3 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 19em;
+}
+section#content1 a,
+section#content2 a,
+section#content3 a {
+  margin-top: auto;
+  background-color: white;
+  border-radius: 1em;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  padding: 0.3em 0.3em;
+}
+section#content1 {
+  background-color: #ffc000;
+}
+section#content2 {
+  background-color: #00ff13;
+}
+section#content3 {
+  background-color: #ff0000;
+}
+
+h3 {
+  font-size: 1.1em;
+}

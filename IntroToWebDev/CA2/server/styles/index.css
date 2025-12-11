@@ -1,0 +1,16 @@
+#heroImage {
+    width: 100%;
+}
+h2 {
+    margin-top: 2rem;
+}
+section {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: var(--color-white);
+    padding: 0 1rem;
+}
+#iframe {
+    height: 800px;
+    width: 100%;
+    border-radius: 0.8rem;
+}

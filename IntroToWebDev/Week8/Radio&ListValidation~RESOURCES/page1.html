@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		
+		<title>
+			HTML5 validation of Radio Buttons and Selection Lists
+		</title>
+		
+		<style rel="stylesheet" type="text/css">
+			label {width: 200px; display: inline-block}
+		</style>
+		
+		<script>
+		</script>
+	</head>
+	
+	<body>
+		<h1>HTML5 Validation where Form Element Values are HARD-CODED (i.e. user not typing the value</h1>
+		
+		<p>
+			When you click on the "submit" button, you shouldn't be able to get to the next page until:			
+		</p>
+		
+		<ol>
+			<li>a radio button has been clicked (or checked);</li>
+			<li>a selection list option, that has a non-empty value, has been chosen.</li>
+		</ol>
+	
+		<h2>
+			HTML5 Validation of RADIO BUTTONS: <br />(1) set each of them as "required"
+		</h2>
+		
+		<h2>
+			HTML5 Validation of SELECTION LIST: <br />(1) set &lt;select> as "required"<br />(2) first &lt;option> should be informational text and value="" (i.e. blank value)
+		</h2>
+		
+		<form action="Success.html">
+			<p>Radio button set for Favourite Town</p>
+			
+			<label for="town1">Dundalk</label><input type="radio" name="towns" id="town1" required/><br />
+
+			<label for="town2">Drogheda</label><input type="radio" name="towns" id="town2" required/><br />
+
+			<label for="town3">Ardee</label><input type="radio" name="towns" id="town3" required /><br /><br />
+			
+			<hr /><br /><br />
+			
+			<p>Selection List for Favourite County</p>
+			
+			<label for="counties">Pick from here</label>
+			<select id="counties" name="counties" required>
+				<option value="">Pick your Favourite County:</option>
+				<option value="Louth">Louth</option>
+				<option value="Meath">Meath</option>
+				<option value="Monaghan">Monaghan</option>
+			</select><br /><br />
+				
+			<input type="submit" value="Click to validate" />&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="reset" value="Reset the Form" />
+		</form>
+	</body>
+</html>

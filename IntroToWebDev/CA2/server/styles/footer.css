@@ -1,0 +1,44 @@
+@media only screen and (max-width: 890px) {
+    footer {
+        padding-bottom: 6rem;
+    }
+}
+#footerLinks {
+    margin-left: auto;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.4rem;
+    margin-right: 0.3rem;
+}
+#footerLinks li {
+    margin: 0 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#footerLinks li a svg {
+    width: 2.3rem; 
+    height: 2.3rem;
+}
+#footerLinks li a svg * {
+    fill: var(--color-red);
+    stroke: var(--color-dark-red);
+    stroke-width: 0.0rem;
+    transition: 0.1s ease-in-out;
+}
+#footerLinks li a:hover svg *{
+    fill: var(--color-green);
+    stroke: var(--color-dark-green);
+}
+#author {
+    position: absolute;
+}
+#author::after {
+    position: relative;
+    display: block;
+    left: 50vw;
+    margin-bottom: 1.9rem;
+    transform: translate(-50%, 0%);
+    content: 'Neo Sahadeo';
+}

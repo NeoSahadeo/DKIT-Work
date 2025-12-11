@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2b76ce8d-a03a-4f78-831d-43bf699b76f2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../CA5/code/draw_pieces.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../CA5/code/draw_pieces.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CA5/code/draw_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../CA5/code/draw_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CA5/code/events.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../CA5/code/events.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CA5/code/game_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../CA5/code/game_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CA5/code/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../CA5/code/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CA5/code/state.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../CA5/code/state.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CA5/code/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../CA5/code/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../turtle/Feb21/ex_a5.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../turtle/Feb21/ex_a5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CA1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CA2/CA2_word.odt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CA2/exercise_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CA2/exercise_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CA2/exercise_3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week12/demo_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week12/demo_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week12/demo_3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week12/demo_4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week12/demo_5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week12/demo_6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week12/exercises/a_ex1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week12/exercises/a_ex2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week12/exercises/a_ex3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week12/exercises/a_ex4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week12/exercises/b_ex1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week12/exercises/b_ex2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week12/exercises/b_ex3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week12/exercises/b_ex4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week12/exercises/c_ex1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week12/exercises/c_ex2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week12/exercises/c_ex3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week12/exercises/c_ex4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week12/exercises/d_ex1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week12/exercises/d_ex2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week12/exercises/d_ex3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week12/exercises/d_ex4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../loan_repayment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week3/wage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week3/week3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week3/week3_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week3/week3_bills.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week3/week3_exercises.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week3/week3_grades.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week4/exercise_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week4/exercise_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week4/exercise_3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week4/exercise_4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week4/exercise_5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week4/match.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week4/match_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week4/match_3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week4/match_exercise_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week4/match_exercise_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week4/match_exercise_3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week4/match_exercise_4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week4/match_exercise_5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week5/c_ex1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week5/c_ex2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week5/d_ex1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week5/ex1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week5/ex2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week5/ex3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week5/ex4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week5/loop_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week5/loop_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week5/loop_3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week5/loop_4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week5/while_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week6/exercise_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week6/exercise_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week6/exercise_3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week6/exercise_4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week6/exercise_5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week6/exercise_6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week6/general_ex1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week6/general_ex2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week6/general_ex3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week6/general_ex4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week6/loan_repayment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week6/while_loop2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week6/while_loop_ex1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week6/while_loop_ex2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week6/while_loop_ex3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week6/while_loop_ex4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week6/while_loop_ex5.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2urDvdmMp0eQ4coJbjmdrfw3Kgj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.email_prog.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/neosahadeo/Documents/Projects/DKIT/IntroToProgramming/2025/structured_data/email"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2b76ce8d-a03a-4f78-831d-43bf699b76f2" name="Changes" comment="" />
+      <created>1742998031019</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1742998031019</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/email_prog.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/email_prog.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

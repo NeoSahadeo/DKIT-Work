@@ -1,0 +1,36 @@
+stages:
+  - test
+  - build
+  - deploy
+
+build-job:
+  stage: build
+  tags:
+    - host
+  before_script:
+    - |
+      docker info
+  script:
+    - |
+      echo "Creating Python Container Image"
+      docker build -t server-lab3 --file dockerfile-python .
+      echo "Compile complete"
+
+unit-test-job:
+  stage: test
+  script:
+    - |
+      echo "Running unit tests"
+      pip install flask
+      pip install pytest
+      python -m pytest -v -s
+
+
+deploy-job:
+  stage: deploy
+  tags:
+    - host
+  script:
+    - |
+      docker compose --file compose-python.yml up -d
+      echo "DEPLOY!"

@@ -1,0 +1,104 @@
+SPEECH:
+
+Slides 1:
+I will talk to you about observability.
+Observability is all about
+understading the internal operations
+of a system based on external outputs.
+
+
+Slide 2:
+Why should we care about observability?
+Observability matters as it increases
+the reliability, performance, security,
+and velocity of software.
+
+How does observability affect these aspects?
+Monitoring these systems helps teams
+to identify the root causes of issues which then
+allows them to systematically improve
+applications and services.
+
+If teams are able to identify the issues
+that cause systems to behave strangely or
+poorly, optimising these pathways are a good
+starting point to improve the service or application.
+
+How does the industry achieve observability?
+The 3 main ways are logs, metrics, and traces.
+
+What are logs?
+Logs are a set of recorded
+events that occur during
+the operations of a program.
+These usually include the date, time, and
+ouput of a process.
+
+When a program crashes or encounters an
+error, the log is usually the first
+place a devops engineer will check.
+
+What are metrics?
+Metrics are a measurement taken usually
+with respect to time.
+
+Metrics are put in place throughout
+the devops pipeline and specifically
+in observability it is used for
+detecting anomalies, capacity planning
+and providing alerts.
+
+What are traces?
+A trace is the recorded journey that
+a process takes throughout its lifetime
+in an application.
+
+Traces are used for root cause anaylisis
+where it can be read through to find
+the parent proccess of a program.
+
+
+Slide 3:
+Current industry trends of observability;
+Machine learning is increasingly being used
+to proccess large amounts of data and make
+predications based on this data.
+
+Micro-service architecture is the
+current industry trend of splitting
+up its' services into smaller systems.
+The increase in the amount of smaller
+systems increases the need of
+observability to minimise losses.
+
+Edge devices are things
+such as sensors and edge gateways
+
+Next, Open source tooling is being increasinly
+adopted as is reduces the cost of
+propreitry software and the ability
+to modify that software.
+
+Finally, is cloud computing. As the cost
+of moving infrastructure to the cloud
+decreases and as the ease of
+horizontal-scalability increases with services
+such as AWS EC2, cloud computing
+will continue to grow requirering more
+observaility to help maintain this system
+
+A few industry tools.
+Grafana.
+
+Future employment pathways will require
+a devops engineer to understand and
+employ observability.
+
+Current projections are 70% of
+teams by 2026 will be using some
+sort of obsevability software and
+pipelining.
+
+A job listing screenshot taken
+last week explores the skills needed.
+One of which is observability.

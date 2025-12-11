@@ -1,0 +1,183 @@
+Reasons for choosing program:
+The primary reason I chose this course was I knew I needed to provide my
+life with a semblence of meaning. I know I couldn't do nothing and I always
+had a nact for figuring out systems worked. So I chose computer science since
+its hard enough for me to do and allow me to enter the job market.
+Generally speaking the degree doesn't mean particularly much but if the
+entire competition has at minimum a bsc then it would be difficult to
+convince potential employers to consider me.
+I did not want to study in South Africa thus I began researching and
+found a company Sable Education where they help potential students
+with applying for courses.
+They then found this and I looked over what it offered.
+I did know what Devops was before this because I was avid in the tech
+space.
+Main reason for choosing course was to make myself competitive in the job
+market. Knowledge is pretty much free
+
+1. Job Listings:
+Reference actual job postings that require the skills you will acquire from the course. For instance, mention roles like "Software Developer," "Network Engineer," or "DevOps Engineer" and highlight the skills they require.
+2. Industry Trends:
+Discuss current industry trends that emphasize the demand for computer science skills. For example, you could mention the rising need for cybersecurity professionals or the growth of cloud computing.
+3. Personal Career Goals:
+Specify your own career aspirations, such as wanting to work in a particular sector (e.g., fintech, healthcare tech) and how the skills from the course will help you achieve those goals.
+
+**Work on this**
+[addressing questions such as ‘What do
+you expect to be able to do at the end of this programme?’, ‘What type of
+person do you expect to be?’, etc.)]
+Expectations on Graduation:
+My expectations if I graduate would be a thorough understanding of the devops lifecycle,
+how to launch and scale and applications.
+I hope to be competitive in the then current job market and able
+to find a career.
+I also hope to know how to use multiple tools such as docker, grafana, Python,
+Java, gitlab and etc.
+I would also expect myself to understand networking, architecting software,
+virtualisation, operating systems, databases, and the DevOps lifecycle.
+I also would expect myself to have developed my team working skills and
+comminucation skills.
+
+[5+ year plan,
+Salay,
+Where,
+Position]
+Career Pathways:
+
+
+
+Review of semester 1:
+Overall for semester 1 I think I did pretty well considering
+my understanding and grades recieved this semester.
+Generally speaking, roughly 10% of the work I did
+in semester 1 was new to me.
+(Too deep)
+I do not believe that the content was entirely worth it
+and I struggle with seeing myself continue this course if
+
+Considering my marks for all subjects I did well.
+The hardest subject I found was computer hardware as
+thehttps://www.netflix.com/ie/re was a slight learning curve when it came down to
+how to layout the work. For example, the first lab I submitted
+was about a logic diagram. I didn't label the components and
+that lost me quite a few marks.
+Another hard thing about hardware was assembly and conversions to
+different number systems. At first assembly cooked my brain.
+I had absolutely no clue how to use it and for the matter the
+actual emulator. I didn't know how the code was stepping, how
+to do either direct or indirect assignmenet and how to change
+/reset the values of my registers. Adding, etc was also
+pretty difficult because there are registers made specifically for
+that purpose.
+The tests were pretty tuff. Generally the test felt like a gamble
+for me. I would study for it and still feel like the odds were
+stacked against me in the test.
+I learnt some pretty dandy ways to convert between number bases.
+I also learnt the internals of a MAC desktop PC.
+
+
+Mathematics was overall pretty boring. I never did boolean algebra
+before, nor graph theory, nor statistics but those topics weren't
+difficult nor very interesting execpt graphy theory.
+Graph theory was my highlight of the module. It had some very
+interesting consequences like path finding and nodes, both
+of which I currently find fasciniating.
+The tests were very easy where I consistenly scored above 80.
+(IDK about this) Future plans of study to improve would be to finish
+Calculus, Linear algebra, Statistics, Graph Theory, and Combonatorics.
+
+
+Front-End was extremely boring. I knew all of the content and then
+some. I was so bored in fact, for my final CA I made Spotify clone
+using Svelte/Sveltekit 5 (which was entirely new to me) for the front
+end and included a gitlab backend. Where I used the free api for gitlab
+with the 10GB per repo model to upload roughly 2000 songs. That I found
+extremely enjoyable.
+I felt that this course was taught well, but again, I knew the content.
+Things I could improve on in front-end would be relaxing a little more.
+I consistenly went out of my way to make everthing more convuluted and
+difficult for myself. For example: I wrote a custom HTML parse, abstract
+syntax tree and node setup to create website using partial files.
+I did not learn anything new from this course.
+
+Devops was actually really enjoyable. This is something I have never done
+before. I never learnt docker, or nginx so it was all totally new to me.
+Docker was extremely fun to learn. I can confidently say I can setup
+simple images and containers.
+Nginx was a new thing for me. I would normally use something like python
+as a html server with http module.
+I learnt how to also setup gitlab workflows with gitlab runners which was
+something I've been meaning to do for a while.
+In the future I want to improve  my docker skill by learning how to build
+my own base image and modify layers of the image.
+I'd also want to learn how many things nginx can use so I always have that
+as a tool.
+
+Intro to programming was the bane of my existence. I've been programming
+since highschool. Where we had a small module on webdev (basic html, css, js)
+and we learnt pseudo code in class. I've been programming Python for
+4 years at this point. So none of the content was new and doing things
+the beginner way was extremely difficult for me as systems exist in Python
+to solve most of these problems but I understand why it had to be done this
+way.
+I did not learn anything from this module.
+Future plans for improvement in this domain would be to learn more programming
+paradigms. I covered OOP recently as I was following the OSSU program outline.
+
+SWOT!
+
+Strengths:
+Responsiblity
+Independence
+Result Orientated
+
+Weaknesses:
+Flexibility
+Empathy
+
+Threats:
+TODO
+
+Oppurtunities:
+TODO
+
+
+I acknowledge the use of [1] Poe (https://poe.com/) to [2] remove declerations of "I" in my document,
+used to mark my work, used to formalise my language and summarise the word count.
+The prompts (generated on 13th Feb 2025) used include [3]
+
+1. 'Could your remove the word "I" because I need this to be a report'
+2. "Based on this context is this paragraph relevevant?"
+3. "does this make sense"
+4. "Summarise this and write it in a more formal way"
+
+
+
+The prompt outputs were as follows / are included in an appendix
+(depending on volume) [4] [prompt outputs]/[appendix].
+The output from the generative
+artificial intelligence was used to [5] modify and adapt the exisiting
+text for the final submission.
+
+
+Introduction -- done
+Reasons -- done
+
+Expectations -- done
+Grad Path -- done
+Review -- done. Can be cut down
+Conclusion -- done
+Swot -- done
+
+
+BSc in Computing Systems and Operations (Software Development and DevOps) at DkIT. DkIT - Dundalk Institute of Technology [online]. Available from: https://www.dkit.ie/courses/school-of-informatics-and-creative-arts/computing-science-and-mathematics/bsc-in-computing-systems-and-operations.html [accessed 11 February 2025].
+
+Careers advice: build your skills and get hired | gradireland. Available from: https://gradireland.com/careers-advice [accessed 13 February 2025].
+
+DevOps Market Size, Share, Growth Trends & Forecast - 2032. Global Market Insights Inc. [online]. Available from: https://www.gminsights.com/industry-analysis/devops-market [accessed 13 February 2025].
+
+Do the KYSS test | Kickstart - Lemo. Available from: https://kickstart.goleweb.be/en/take/3563 [accessed 13 February 2025].
+
+Essential DevOps Statistics and Trends for Hiring in 2025. Brokee [online]. Available from: https://brokee.io/blog/essential-devops-statistics-and-trends-for-hiring-in-2024 [accessed 13 February 2025].
+
+Model, S. and admin. (2024). Personal SWOT Analysis: Quick Guide (with Examples) [online]. SlideModel [online]. Available from: https://slidemodel.com/personal-swot-analysis-quick-guide/ [accessed 11 February 2025].

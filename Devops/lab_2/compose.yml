@@ -1,0 +1,13 @@
+services:
+  web1:
+    image: nginx
+    ports:
+      - 8080:80
+  web2:
+    image: nginx
+    ports:
+      - 8081:80
+  load-blancer:
+    image: nginx-lb
+    ports:
+      - 80:80

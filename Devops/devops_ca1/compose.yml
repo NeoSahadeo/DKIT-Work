@@ -1,0 +1,14 @@
+services:
+  web1:
+    image: app1
+    ports:
+      - 8080:8080
+  web2:
+    image: app2
+    ports:
+      - 8081:8081
+
+  load_balancer:
+    image: nginx_lb
+    ports:
+      - 80:80

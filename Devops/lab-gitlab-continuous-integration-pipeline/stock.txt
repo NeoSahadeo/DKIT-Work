@@ -1,0 +1,4 @@
+pencil,0.15,97
+printer paper,1.5
+ruler,0.6,120
+eraser,0.65,130

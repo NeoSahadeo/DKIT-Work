@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      tr,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <label> Columns: </label>
+      <input id="row_input" type="text" />
+    </div>
+    <div>
+      <label> Rows: </label>
+      <input id="column_input" type="text" />
+    </div>
+    <div id="table"></div>
+    <script>
+      function generate_table(rows, columns) {
+        const table = [];
+
+        // Generate Columns
+        for (let x = 0; x < columns; ++x) {
+          table.push([]);
+        }
+        // Generate Rows
+        table.forEach((value, index) => {
+          for (let x = 0; x < rows; ++x) {
+            table[index].push([]);
+          }
+        });
+
+        // Fill in table
+        table.forEach((columns, col_x) => {
+          columns.forEach((row, row_x) => {
+            table[col_x][row_x] = `${col_x}.${row_x}`;
+          });
+        });
+
+        return table;
+      }
+
+      function generate_html(rows, columns) {
+        const table = generate_table(rows, columns);
+
+        let html_table = "";
+        table.forEach((e) => {
+          let table_row = "";
+          e.forEach((x) => {
+            table_row += `<td>${x}</td>`;
+          });
+          html_table += `<tr>${table_row}</tr>`;
+        });
+        return "<table>" + html_table + "</table>";
+      }
+
+      row_input.addEventListener("input", (e) => update_table());
+      column_input.addEventListener("input", (e) => update_table());
+
+      const update_table = () => {
+        table.innerHTML = generate_html(row_input.value, column_input.value);
+      };
+    </script>
+  </body>
+</html>

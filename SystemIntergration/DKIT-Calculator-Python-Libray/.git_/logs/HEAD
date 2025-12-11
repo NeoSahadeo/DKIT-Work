@@ -1,0 +1,8 @@
+0000000000000000000000000000000000000000 cdad55caee85e3dc36725bb0bc4ea51613fa91b2 NeoSahadeo <neosahadeo@protonmail.com> 1743763272 +0100	clone: from https://github.com/NeoSahadeo/DKIT-Calculator-Python-Libray
+cdad55caee85e3dc36725bb0bc4ea51613fa91b2 8c791cd0ab379c130026c8a789e842131c0b61bc NeoSahadeo <neosahadeo@protonmail.com> 1743765479 +0100	commit: :sparkles: added some tests
+8c791cd0ab379c130026c8a789e842131c0b61bc 63d8a1b0f76436c996d825029b86d00b16e135bb NeoSahadeo <neosahadeo@protonmail.com> 1743766334 +0100	commit: :test_tube: added multiply test
+63d8a1b0f76436c996d825029b86d00b16e135bb f6fdbcbf7508957df8b0a020727834e200db5792 NeoSahadeo <neosahadeo@protonmail.com> 1743766647 +0100	pull origin circleci-project-setup: Merge made by the 'ort' strategy.
+f6fdbcbf7508957df8b0a020727834e200db5792 961143046151eb19d7a8f9fd806f3d1be7027eea NeoSahadeo <neosahadeo@protonmail.com> 1743766809 +0100	commit: :sparkles: added code
+961143046151eb19d7a8f9fd806f3d1be7027eea 5593b8b83636b1851c1fe1c0119defc7ff710e38 NeoSahadeo <neosahadeo@protonmail.com> 1743767215 +0100	commit: :memo: added badhe
+5593b8b83636b1851c1fe1c0119defc7ff710e38 ad27f9fd7e17401302302ff1ab90943aa48aa6dc NeoSahadeo <neosahadeo@protonmail.com> 1743767222 +0100	commit (amend): :memo: added badge
+ad27f9fd7e17401302302ff1ab90943aa48aa6dc 1532c37830a84ec5dac49261067a2a1c972f5c78 NeoSahadeo <neosahadeo@protonmail.com> 1745851466 +0100	commit: :white_check_mark: added in division function and test

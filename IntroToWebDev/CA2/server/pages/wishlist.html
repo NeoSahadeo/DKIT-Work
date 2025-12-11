@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="page" content="wishlist">
+        <title>Wishlist</title>
+        <link rel="stylesheet" href="../styles/global.css">
+        <link rel="stylesheet" href="../styles/wishlist.css">
+        <link rel="stylesheet" media="print" href="../styles/print.css">
+        <script src="../scripts/loadheader.js"></script>
+        <script src="../scripts/loadfooter.js"></script>
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <section>
+                <h1 class="title">What I want for Chirstmas!</h1>
+                <form action="mailto:northpole@gmail.com" method="post">
+                    <p>Dear Santa,</p>
+                    <br>
+                    <label for="good_things">
+                        I've been very good this year. I did good things like,
+                    </label>
+                    <textarea autoheight autofocus required id="good_things" placeholder="All the good things I did this year"></textarea> 
+                    <br>
+                    <label id="good_scale">On a scale of 1-10, I was this good:<span id="goodSliderFeedback">5</span></label>
+                    <input type="range" min="1" max="10" step="1" value="5" id="goodScale" name="good_scale" oninput="updateSliderFeedback(this)">
+                    <br>
+                    <p>
+                        If your VISA applications' take awhile and you get delayed I'll provide my phone number and email:
+                    </p>  
+                    <span class="inputContainer">
+                        <label class="normalLabel" for="phone_number">Phone Number:
+                            <span>
+                                +353
+                            </span>
+                        </label>
+                        <input class="defaultInput" placeholder="Phone Number" required type="tel" id="phone_number" pattern="0?[0-9]{9}" maxlength="10"> 
+                    </span>
+                    <span class="inputContainer">
+                        <label class="normalLabel" for="email">Email:</label>
+                    <input class="defaultInput" placeholder="Email" required type="email" name="email" id="email" pattern="(\w+)\@\w+(?=\.)(.*)">
+                    </span>
+                    <br>
+                    <p>I would really like:</p>
+                    <span>
+                        <span class="inputContainer">
+                        <input class="checkbox" type="checkbox" value="A Pint of Guinness">
+                        <span class="checkboxDialogue">
+                            A Pint of Guinness
+                        </span>  
+                        </span>
+                        <span class="inputContainer">
+                        <input class="checkbox" type="checkbox" value="The Map to Atlantis">
+                        <span class="checkboxDialogue">
+                            The Map to Atlantis
+                        </span>
+                        </span>
+                        <span class="inputContainer">
+                        <input class="checkbox" type="checkbox" value="Authentic BigFoot skin coat">
+                        <span class="checkboxDialogue">
+                            Authentic BigFoot skin coat
+                        </span>
+                        </span>
+                    </span>
+                    <br>
+                    <p>The current day is:</p>
+                    <input type="date">
+                    <p>
+                    Hope to "see" you soon.
+                    </p>
+                    <br> 
+                    <p>P.S.</p>
+                    <br>
+                    <p>It's a real long journey to my house.</p>
+                    <p>To sweeten the deal, I'll offer you<span>
+                        <select name="deal" id="deal" required>
+                            <option selected="selected" disabled value="">Pick an option...</option>
+                            <option value="milk and cookies">Milk and Cookies</option>
+                            <option value="10000 dollars">$10000 in unmarked bills</option>
+                            <option value="ho ho ho's">Ho Ho Ho's😉</option>
+                        </select>
+                    </span> when you arrive.</p>
+                    <br>
+                    <hr>
+                    <br>
+                    <fieldset>
+                        <legend>
+                            Santa's Requirements
+                        </legend>
+                        <label for="color">Pick the Colour of the gift wrap:</label>
+                        <input id="color" name="color" type="color">
+                        <br>
+                        <br>
+                        <span>
+                            <span>Allow Santa to break into your house.</span>
+                            <br>
+                            <span class="inputContainer" style="align-items: center;">Yes
+                                <input style="margin-left: 0.3rem;" required type="radio" name="break_in">
+                            </span>
+                            <span class="inputContainer" style="align-items: center;">
+                                <span>
+                                    Yes<sup>2</sup>
+                                </span>
+                                <input style="margin-left: 0.3rem;" required type="radio" name="break_in">
+                            </span>
+                        </span>
+                    </fieldset>
+                    <br>
+                    <br>
+                    <div>
+                        <input class="formButton" type="reset" value="Clear Form">
+                        <input class="formButton" type="submit" value="Send to the North Pole">
+                    </div>
+                </form>
+            </section>
+            <script src="../scripts/formValidator.js"></script>
+            <script src="../scripts/elementAutoHeight.js"></script>
+            <script>
+                'use strict';
+                document.addEventListener('DOMContentLoaded', ()=>{
+                    window.feedbackElement = document.getElementById('goodSliderFeedback')
+                })
+                function updateSliderFeedback(self) {
+                    window.feedbackElement.innerHTML = self.value;
+                }    
+            </script>
+        </main>
+        <footer></footer>
+    </body>
+</html>

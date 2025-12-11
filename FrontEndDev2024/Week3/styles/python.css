@@ -1,0 +1,17 @@
+#python-image1,
+#python-image2,
+#python-image3 {
+  width: 100%;
+  height: 8em;
+  border-radius: 0.4em;
+  background-color: yellow;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#python-image1 {
+  background-image: url("../images/python-intro.webp");
+}
+#python-image2 {
+  background-image: url("../images/more-python.webp");
+}

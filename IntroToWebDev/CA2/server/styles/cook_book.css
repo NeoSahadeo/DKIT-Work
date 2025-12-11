@@ -1,0 +1,110 @@
+#cook_book {
+    max-width: 100%; 
+    display: flex;
+    flex-direction: row;
+}
+.recipeContainer {
+    font-family: var(--normal-font);
+    width: 12rem;
+    background-color: var(--color-white);
+    padding: 0.5rem 0.5rem 0.6rem 0.5rem;
+    /* border-radius: 0.5rem 0.5rem 0.5rem; */
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.08s ease-in-out;
+    margin: 0 0.5rem 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.recipeContainer:hover {
+    transform: scale(1.01);
+    -webkit-box-shadow: 0px 0px 14px 5px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 0px 14px 5px rgba(0,0,0,0.45);
+    box-shadow: 0px 0px 14px 5px rgba(0,0,0,0.45);
+}
+.recipeContainer * {
+    pointer-events: none;
+}
+.recipeContainer img {
+    width: 100%;
+    height: 13rem;
+    border-radius: 0.4rem;
+    object-fit: cover;
+}
+.recipeTitle, .recipeCookTime {
+    color: var(--color-black);
+}
+.recipeTitle {
+    padding-top: 1rem;
+    padding-bottom: 0.4rem;
+    font-size: 1.3rem;
+}
+.recipeCookTime {
+    font-size: 0.7rem;
+    width: max-content;
+    background-color: var(--color-light-red);
+    padding: 0.2rem 0.4rem;
+    border-radius: 1rem;
+    color: var(--color-dark-red);
+    margin-left: 0.3rem;
+}
+.quickInfo {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+}
+#previewContainer {
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+    position: fixed;
+    background-color: var(--color-white);
+    transition: 2s ease-in-out;
+}
+.previewTime {
+    margin-left: auto;
+}
+.previewSection {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#previewTitle {
+    font-size: 4rem;
+    font-family: var(--normal-font);
+    position: absolute;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    z-index: 999;
+    color: white;
+}
+#previewDescription {
+    z-index: 999;
+    font-family: var(--normal-font);
+    margin-top: 0.2rem;
+}
+#previewContainer img{
+    height: 9rem;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+#previewContainer::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 9rem;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    top: 0px;
+    position: absolute;
+    z-index: 900;
+}
+h2 {
+    font-family: var(--normal-font);
+}
+#heroContainer {
+    padding: 0px 1rem;
+}

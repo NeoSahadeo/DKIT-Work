@@ -1,0 +1,38 @@
+<section>
+  <h1>Strings in JS</h1>
+  <p>
+    Strings can be manipulated in Javascript. Strings act as an array-list of
+    characters. (Array-lists are a muttable data structure).
+  </p>
+  <p>Strings extend the base `string` class.</p>
+  <b>String.prototype</b>
+  <p>
+    Type in `String.prototype` in the console to list out the base string class
+    attributes.
+  </p>
+  <pre>
+ <code id="htmlViewer" style="color:rgb(235, 219, 178); font-weight:400;background-color:rgb(40, 40, 40);background:rgb(40, 40, 40);display:block;padding: .5em;"><span class="hljs-title class_">String</span>.<span style="color:rgb(235, 219, 178); font-weight:400;"><span style="color:rgb(251, 73, 52); font-weight:400;">prototype</span></span></code></pre>
+  <b> Concatenating strings using the '+' operator </b>
+  <pre>
+ <code id="htmlViewer" style="color:rgb(235, 219, 178); font-weight:400;background-color:rgb(40, 40, 40);background:rgb(40, 40, 40);display:block;padding: .5em;"><span style="color:rgb(250, 189, 47); font-weight:400;">const</span> x = <span style="color:rgb(184, 187, 38); font-weight:400;">&quot;Hello&quot;</span>;
+<span style="color:rgb(250, 189, 47); font-weight:400;">const</span> y = <span style="color:rgb(184, 187, 38); font-weight:400;">&quot;World&quot;</span>;
+
+console.<span style="color:rgb(131, 165, 152); font-weight:400;">log</span>(x + y);
+
+<span style="color:rgb(146, 131, 116); font-weight:400;">// Output: HelloWorld</span>
+</code></pre>
+  <b> Slicing a string using the slice method. </b>
+  <pre>
+ <code id="htmlViewer" style="color:rgb(235, 219, 178); font-weight:400;background-color:rgb(40, 40, 40);background:rgb(40, 40, 40);display:block;padding: .5em;"><span style="color:rgb(250, 189, 47); font-weight:400;">const</span> x = <span style="color:rgb(184, 187, 38); font-weight:400;">&quot;Hello&quot;</span>;
+<span style="color:rgb(250, 189, 47); font-weight:400;">const</span> y = <span style="color:rgb(184, 187, 38); font-weight:400;">&quot;World&quot;</span>;
+
+console.<span style="color:rgb(131, 165, 152); font-weight:400;">log</span>(x.<span style="color:rgb(131, 165, 152); font-weight:400;">slice</span>(<span style="color:rgb(211, 134, 155); font-weight:400;">0</span>, <span style="color:rgb(211, 134, 155); font-weight:400;">4</span>));
+
+<span style="color:rgb(146, 131, 116); font-weight:400;">// Output: Hell</span></code></pre>
+</section>
+<script class="ijwt_remove" src="../static/scripts/strings_example.js"></script>
+<script
+  class="ijwt_remove"
+  src="../static/scripts/ijwt_auto.js"
+  type="module"
+></script>

@@ -1,0 +1,5 @@
+services:
+  app1:
+    image: server-lab3
+    ports:
+      - "5010:5000"

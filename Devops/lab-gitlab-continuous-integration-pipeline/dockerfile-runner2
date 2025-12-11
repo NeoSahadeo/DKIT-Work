@@ -1,0 +1,12 @@
+FROM gitlab/gitlab-runner:alpine
+
+RUN <<EOF
+apk add docker docker-compose
+docker info
+usermod -aG $USER docker
+gitlab-runner register \
+--non-interactive \
+--url https://gitlab.comp.dkit.ie \
+--token glrt-dfT7TzhzruDigRxbsqXY \
+--executor "shell" \
+EOF

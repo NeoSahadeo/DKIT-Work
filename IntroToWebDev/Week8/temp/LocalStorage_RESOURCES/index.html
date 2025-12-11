@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		
+		<title>Form LocalStorage</title>
+		
+		<link rel="stylesheet" type="text/css" href="styles/centre.css" />
+	</head>
+	
+	<body>
+		<main>
+			<header>
+				<h1>Form with Local Storage: Page 1</h1>
+				<h1><u>WRITING to</u> LOCAL STORAGE</h1>
+			</header>
+			
+			<article>
+				<h2>Saving the Form Information into the Browser Memory: LOCAL STORAGE</h2>	
+				
+				<form name="theForm" id="theForm" method="post" action="thanks.html" onsubmit="return checkForm()">
+					<label>Your Name:</label>
+                    <input type="text" id="theName" name="theName" required placeholder="at least 3 characters" pattern="\S{3}">
+                    <span class="indicator-red hidden" id="nameLengthIndicator">Should be 3 or more characters.</span>
+                    <br><br>
+
+					<label>Your Age (years):</label>
+					<input type="number" id="theAge" name="theAge" min="1" required><br><br>
+					
+					<label>Where Born:</label>
+					<select id="theCountry" name="theCountry" required>
+						<option value="">Pick a Country...</option>
+						<option value="IE">Ireland</option>
+						<option value="GB">Great Britain</option>
+						<option value="RE">Rest of Europe</option>
+						<option value="RW">Rest of World</option>
+					</select><br><br>
+
+                    <label for="theEmail">Email Address:</label>
+                    <input type="email" name="theEmail" id="theEmail" required>
+                    <br>
+                    <br>
+
+                    <label for="favouriteDay">Favourite Day:</label>
+                    <select id="favouriteDay" name="favouriteDay">
+                        <option value="">Pick a day...</option>
+                        <option value="Monday">Monday</option>
+                        <option value="Tuesday">Tuesday</option>
+                        <option value="Wednesday">Wednesday</option>
+                        <option value="Thursday">Thursday</option>
+                        <option value="Friday">Friday</option>
+                        <option value="Saturday">Saturday</option>
+                        <option value="Sunday">Sunday</option>
+                    </select>
+                    <br>
+                    <br>
+
+                    <label for="favouriteColour">Favourite Colour:</label>
+                    <input type="color" id="favouriteColour" name="favouriteColour" required>
+                    <br>
+                    <br>
+                    
+                    <label for="favouriteIceCream">Best Ice cream flavour:</label>
+                    <br>
+                    <label for="vanilla">Vanilla</label>
+                    <input type="radio" name="favouriteIceCream" id="vanilla" value="Vanilla" required>
+                    <br>
+                    <label for="vanilla">Vanilla</label>
+                    <input type="radio" name="favouriteIceCream" id="vanilla" value="Vanilla" required>
+                    <br>
+                    <label for="vanilla">Vanilla</label>
+                    <input type="radio" name="favouriteIceCream" id="vanilla" value="Vanilla" required>
+					
+                    <br>
+                    <br>
+					<input type="reset" value="Reset the Form">
+					&nbsp;&nbsp;&nbsp;
+					<input id="submitForm" type="submit" value="SUBMIT the Form Data to Local Storage">
+					
+				
+				</form>
+				
+			</article>
+			
+			<footer>
+				&copy;
+				<script>
+					var rightNow = new Date();
+					var currentYear = rightNow.getFullYear();
+					document.write(currentYear);
+				</script>
+				 Philip McGuinness
+			</footer>
+ 		</main>
+		
+		<script src="scripts/Local_Storage.js"></script>
+	</body>
+</html>
+

@@ -1,0 +1,197 @@
+Neo Sahadeo - 11/02/2025
+
+____AVERAGE____
+Where are the grades coming from?
+  Answer: User input
+How do you take in a grades from that source?
+  Answer: input("Enter grades: ")
+How do you split up grades?
+  Answer: call the .split() method on the string
+How are you going to store it?
+  Answer: Store it in a list variable
+
+What does the function do?
+  Answer: Sum all the values and return the average
+How are you going to do this?
+  Answer: Loop through all of the elements adding it to a variable
+          tally then dividing that by the amount of items.
+What type of loop?
+  Answer: A for loop
+How are you going to add up the values?
+  Answer: Using the Python += binary operator
+How will you get the amount of items?
+  Answer: Use a seperate tally counter
+
+Pseudo-Code
+Part-1:
+create a function called 'avg'
+this function takes in a parameter
+create two tally variables, the first called
+'length' and the second called 'total'
+then create a for loop (complex) that will iterate through
+the list in the parameter
+after the for loop at a divide operator to divide both
+tallys and print the result
+
+Part-2:
+take in user input as a single line
+split these into seperate "words"
+add these "words" to a list variable
+pass the variable into the function and call the function
+
+____ENDAVERAGE___
+___HIGHEST___
+Where are the grades coming from?
+  Answer: User input
+How do you take in a grades from that source?
+  Answer: input("Enter grades: ")
+How do you split up grades?
+  Answer: call the .split() method on the string
+How are you going to store it?
+  Answer: Store it in a list variable
+
+What does the function do?
+  Answer: Check which value in the list is the largest
+How are you going to do this?
+  Answer: Loop through all of the elements in the list comparing
+          values to the currently stored highest value?
+What type of loop?
+  Answer: A for loop
+What is the current highest value variable?
+  Answer: This is the value where the highest number in the list is stored
+How are you comparing the variables?
+  Answer: I will use the less than binary operater
+How will you pass the list to the function?
+  Answer: Passed as a parameter
+How will you display the highest grade to the user?
+  Answer: A print statement
+
+
+Pseudo code
+part 1:
+^^^^^^^
+create a function that takes in a parameter
+create a variable in the function that stores the highest grade
+set this value to negative 1
+loop through the grades
+if there grade value is greater than the one stored I replace it
+finally I return the value or print the value
+
+part 2:
+^^^^^^^
+take in user input as a single line
+split these into seperate "words"
+add these "words" to a list variable
+pass the variable into the function and call the function
+
+___ENDHIGHEST___
+___LOWEST___
+Where are the grades coming from?
+  Answer: User input
+How do you take in a grades from that source?
+  Answer: input("Enter grades: ")
+How do you split up grades?
+  Answer: call the .split() method on the string
+How are you going to store it?
+  Answer: Store it in a list variable
+
+What does the function do?
+  Answer: Check which value in the list is the largest
+How are you going to do this?
+  Answer: Loop through all of the elements in the list comparing
+          values to the currently stored lowest value?
+What type of loop?
+  Answer: A for loop
+What is the current lowest value variable?
+  Answer: This is the value where the lowest number in the list is stored
+How are you comparing the variables?
+  Answer: I will use the greater than binary operater
+How will you pass the list to the function?
+  Answer: Passed as a parameter
+How will you display the lowest grade to the user?
+  Answer: A print statement
+
+
+Pseudo code
+part 1:
+^^^^^^^
+create a function that takes in a parameter
+create a variable in the function that stores the lowest grade
+set this value to 101
+loop through the grades
+if there grade value is greater than the one stored I replace it
+finally I return the value or print the value
+
+part 2:
+^^^^^^^
+take in user input as a single line
+split these into seperate "words"
+add these "words" to a list variable
+pass the variable into the function and call the function
+___ENDLOWEST___
+___MOST___
+Where are the grades coming from?
+  Answer: User input
+How do you take in a grades from that source?
+  Answer: input("Enter grades: ")
+How do you split up grades?
+  Answer: call the .split() method on the string
+How are you going to store it?
+  Answer: Store it in a list variable
+
+What will the function be called?
+	Answer: most
+What will the function do?
+	Answer: It will print the value that occures the most
+How does it find the value that occurs the most?
+	Answer: I will have a tally counter list that stores how
+					many times each value occurs than prints the highest
+How will you add values to this list?
+	Answer: Using the .append method
+How will you get these values?
+	Answer: I will have 2 loops. The second nested inside the
+					first. This way I have a value to compare to everyother
+					value in the list.
+What loop?
+	Answer: I will use 2 complex for loops
+How will you find the highest value?
+	Answer: I will iterate over the list and compare each value with
+					the current highest value.
+What is the current highest value?
+	Answer: This is a variable I will create outside the loop used to
+					store the value. Its outside the loop so it will not be
+					reset when the loop restarts.
+How will this highest value be used?
+	Answer: I will iterate over the list of tallys and keep track of the
+					index position. When I reach the value that is equal to highest
+					I break out of the loop and print the result of index at the grades
+					list position.
+
+Pseudo code
+part 1:
+^^^^^^^
+create a function that takes in a parameter
+add a tally_counter list variable and set it equal to an empty list
+create my first for loop to iterate over grades
+inside the for loop have a counter variable equal to 0
+have another for loop nested in the one above to iterate over grades again
+inside the nested loop I will have an if statement that compares the current-
+-nested value with the value in the loop above. If true add 1 to the counter
+
+create a highest variable set to 0
+create a new for loop to iterate over the tally
+have an if statement that compares the current element with the value stored-
+-in highest. If true replace the value of highest with the current element
+
+create an index variable set to 0
+create a new for loop to iterate over the tally
+have an if statement that compares the current element with the highest variable.
+If true print the result of that index position in the grades list and break
+
+part 2:
+^^^^^^^
+take in user input as a single line
+split these into seperate "words"
+add these "words" to a list variable
+pass the variable into the function and call the function
+___ENDMOST__

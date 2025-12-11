@@ -1,0 +1,18 @@
+##[pylyzer] failed /home/neosahadeo/Documents/Projects/DKIT/IntroToProgramming/2025/CA5/code/draw_utils.py 1741198294 2398
+.turtle: Never
+
+.___v_desugar_1 = pyimport "utils"
+.utils = pyimport "utils"
+.conv_spos: (pos: global::Indexable(Obj, Never)) -> global::Tuple([Never, Float])
+.get_screen: () -> global::Tuple([Never, Never])
+.get_tile_size: () -> Never
+.draw_poly: (x: Obj, y: Obj, width: Obj, height: Obj, color: Obj) -> NoneType
+.draw_square: (x: Obj, y: Obj, size: Obj, color: Obj) -> NoneType
+.draw_text: (x: Obj, y: Obj, text: Obj, size: Obj, Type: Obj) -> NoneType
+
+.h: Never
+
+
+
+
+

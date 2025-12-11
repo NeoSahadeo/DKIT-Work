@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Introduction to HTML5 Form Tags</title>
+        <style type="text/css">
+            .embolden {
+                color: red;
+                font-weight: bold;
+            }
+            label {
+                display: inline-block;
+                width: 400px;
+            }
+            input {
+                background: yellow;
+            }
+            input:required {
+                background-color: red;
+            }
+            input:hover {
+                background: chartreuse;
+            }
+            input:focus {
+                background: lightblue;
+            }
+            fieldset {
+                border: purple inset 10px;
+            }
+            legend {
+                font-family: monospace;
+                color: red;
+                font-size: 20px;
+                text-align: right;
+            }
+            form {
+                background-color: cyan;
+                padding: 35px;
+            }
+        </style>
+        <script></script>
+    </head>
+    <body>
+        <h1 style="text-align: center; color: red;">INTRODUCTION TO HTML5 FORMS</h1>
+        <p>
+        Please complete the form. Mandatory fields are marked with an <span class="embolden">*</span>.
+        </p>
+        <form id="zooKeeperForm" name="zooKeeperForm" action="preventDefault(e)">
+            <fieldset>
+                <legend>Contact Details</legend>
+                <label for="Neo">Name <span class="embolden">*</span></label>
+                <input id="Neo" name="Neo" type="text" title="Please enter your name here" placeholder="Name" autofocus required>
+                <br>
+                <label for="telephone">Telephone</label>
+                <input id="telephone" name="telephone" size="50" maxlength="10" placeholder="Phone Number, Please!">
+                <br>
+                <label for="promoCode">Promotion Code</label>
+                <input id="promoCode" name="promoCode">
+                <br>
+                <label for="neosahadeo@protonmail.com">Email <span class="embolden">*</span></label>
+                <input id="neosahadeo@protonmail.com" name="neosahadeo@protonmail.com" type="email" required>
+                <br>
+                <label for="theDate">Date <span class="embolden">*</span></label> 
+                <input id="theDate" name="theDate" type="date" required>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>
+                    <span class="embolden">*</span>Age</label>
+                <input id="age" name="age" type="number" min="0" max="100" required>
+                <br>
+                <label>Weight (in kg)</label>
+                <input id="weight" name="weight" type="range" min="50" max="150" value="60" title="value between 50 and 150kg" />
+                <br>
+                <label>Gender</label>
+                <select id="gender" name="gender">
+                    <option value="female">Female</option>
+                    <option value="male" selected="selected">Male</option>
+                </select>
+                <br>
+                <label>
+                    <span class="embolden">*</span>Favourite Colour</label>
+                <input id="faveColor" name="faveColor" type="color">
+                <br>
+                <label> When did you first know you wanted to be a zoo-keeper?</label>
+                <textarea id="comments" name="comments" ></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Pick Your Favorite Animal (s) </legend>
+                <input id="zebra" name="zebra" type="checkbox"> Zebra
+                <input id="cat" name="cat" type="checkbox"> Cat
+                <input id="other" name="other" type="checkbox"> Other 
+            </fieldset>
+            <fieldset>
+                <legend>Pick Your Favorite Dog Name</legend>
+                <input id="rex" name="dogName" type="radio"> Rex 
+                <input id="fido" name="dogName" type="radio"> Fido 
+                <input id="spot" name="dogName" type="radio"> Spot 
+                <br>
+                <label>County Registration</label>
+                <select name="county" id="county" multiple="multiple" size="4">
+                    <optgroup label="Connacht">
+                        <option>LM</option>
+                        <option>MD</option>
+                    </optgroup>
+                    <optgroup label="Leinster">
+                        <option>CW</option>
+                        <option>KK</option>
+                        <option>LH</option>
+                        <option>MH</option>
+                        <option>WX</option>
+                    </optgroup>
+                    <optgroup label="Munster">
+                        <option>CE</option>
+                        <option>KY</option>
+                        <option>TN</option>
+                        <option>TS</option>
+                    </optgroup>
+                    <optgroup label="Ulster">
+                        <option>MN</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>What's your Favourite Plant?</legend>
+                <datalist id="plantChoices">
+                    <span class="embolden">Pick an option: </span>
+                    <select id="favoritePlantPreset">
+                        <option label="cActus" value="Cactus"></option>
+                        <option label="Lettuce" value="Lettuce"></option>
+                        <option label="Oak TREE" value="Oak Tree"></option>
+                        <option label="Oak Bush" value="Oak Bush"></option>
+                        <option label="Tomato" value="Tomato"></option>
+                    </select>
+                    <br>
+                    <span class="embolden"> Or type it in:</span> 
+                </datalist>
+                <input id="favouritePlant" list="plantChoices">
+                <br><br>
+                Progress to date (1): <br>
+                <progress id="prog1" value="150" max="200" title="75% progress so far"></progress> 
+                <br><br>
+                Progress to date (2):<br>
+                <progress id="prog2" title="in progress"> </progress>
+                <p>
+                Our goal is to raise $50,000 for SLF (Save the Lemmings Foundation).
+                </p>
+                <p>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; So far we've raised $14,000. 
+                <meter id="raise14k" max="50000" value="14000"></meter>
+                </p>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The first Lemming weighs 69 pounds:
+                <meter id="case1" min="5" max="100" high="70" low="15" value="69"></meter>
+                <br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The second Lemming weighs 79 pounds:
+                <meter id="case2" min="5" max="100" high="70" low="15" value="79"></meter>
+                <br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The third Lemming weighs 13 pounds:
+                <meter id="case3" min="5" max="100" high="70" low="15" value="13"></meter>
+                <br> 
+                <p>
+                <input type="submit" value="Submit Application" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type= "reset" value="Reset the Webpage Form">
+                </p>
+                <button id="newbut" type="button" tabindex="2" onclick="javascript:window.alert('I think it is :) ')">
+                    <img src="./images/red.jpg" alt="red">
+                    <span style="color:blue; font-weight: bold; font-size: 20pt; font-style: italic; background-color: chartreuse;">
+                        Is Your Brain Full?
+                    </span>
+                </button>
+            </fieldset>
+        </form>
+    </body>
+</html>
+

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="page" content="cook_book">
+        <title>Cook Book</title>
+        <link rel="stylesheet" href="../styles/global.css">
+        <link rel="stylesheet" href="../styles/cook_book.css">
+        <script src="../scripts/loadheader.js"></script>
+        <script src="../scripts/loadfooter.js"></script>
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <section>
+                <h1 class="title">Christmas Recipes</h1>
+                <div id="container">
+                </div>
+            </section>
+        </main>
+        <div id="previewContainer">
+        </div>
+        <footer></footer>
+        <script>
+            'use strict';
+            const recipeContainer = document.getElementById('container')
+            const previewContainer = document.getElementById('previewContainer')
+            const bodyElement = document.getElementsByTagName('body')
+            const recipesArray = new Array();
+            const urlAnchorRegex = /(?<=\#).*/g;
+            const urlBaseRegex = /.*(?=#)/g;
+
+            class Recipe {
+                constructor(name, cook_time, picture, id, description, instructions, ingredients) {
+                    this.name = name 
+                    this.cook_time = cook_time
+                    this.picture = picture
+                    this.id = id
+                    this.description = description
+                    this.instructions = instructions
+                    this.ingredients = ingredients
+
+                    let ingredientsString = new String();
+                    this.ingredients.forEach(element => {
+                        ingredientsString += ('<li>'+element+'</li>');
+                    })
+
+                    let instructionsString = new String();
+                    this.instructions.forEach(element => {
+                        instructionsString += ('<li>'+element+'</li>');
+                    })
+
+
+                    this.card = `
+                        <a class="hide-a" href="#${this.id}" onclick="viewRecipe(${this.id})">
+                        <div class="recipeContainer">
+                        <img src='${this.picture}'>
+                        <span class="recipeTitle">${this.name}</span>
+                        <span class="quickInfo">Cooking Time
+                        <span class="recipeCookTime">${this.cook_time}</span>
+                        </span>
+                        </div>
+                        </a>
+                        ` 
+
+                    this.preview = `
+                        <section class="previewSection">
+                        <div id="heroContainer">
+                        <h1 id="previewTitle">${this.name}</h1>
+                        <img src="${this.picture}">
+                        <h2>Description:</h2>
+                        <p id="previewDescription">${this.description}</p>
+                        <button onclick="poachURL()">CLOSE</button>
+                        </div>
+                        <article>
+                        <h3>Ingrediants:</h3>
+                        <ul>${ingredientsString}</ul>
+                        </article>
+                        <article>
+                        <h3>Instrctions:</h3>
+                        <ul>${instructionsString}</ul>
+                        <article>
+                        </section>
+                        `
+                }
+            }
+
+            document.addEventListener('DOMContentLoaded', initialize)
+            function initialize() {
+                function loadRecipes() {
+                    const xhttp = new XMLHttpRequest() 
+                    xhttp.addEventListener('load', xhttpListener)
+                    xhttp.open('GET', '../static/recipes.json')
+                    xhttp.send()
+                    function xhttpListener() {
+                        populateRecipes(JSON.parse(this.response))
+                    }
+                }loadRecipes();
+            }
+            const populateRecipes = (json) => {
+                json.forEach(element => {
+                    let recipe = new Recipe(
+                        element.name,
+                        element.cook_time,
+                        element.picture,
+                        element.id,
+                        element.description,
+                        element.instructions,
+                        element.ingredients
+                    )
+                    recipeContainer.insertAdjacentHTML('beforeend', recipe.card)
+                    recipesArray.push(recipe)
+                })
+
+                // Call a preview after populating container
+                viewRecipe(scanURL())
+            }
+            const viewRecipe = (id) => {
+                let matchFound = false;
+                if (id != undefined) {
+                    recipesArray.forEach(element => {
+                        if (id == element.id) {
+                            matchFound = true;
+                            previewContainer.innerHTML = element.preview;
+                        }
+                    })
+                } 
+                <!-- matchFound == false ? --> 
+                <!--     previewContainer.style.display = 'none': -->
+                <!--     previewContainer.style.display = 'block'; -->
+                if (matchFound == false) {
+                    previewContainer.style.display = 'none';
+                    console.log(bodyElement);
+                }else{
+                    previewContainer.style.display = 'block';
+                }
+            }
+
+            const scanURL = () => {
+                const match = window.location.href.match(urlAnchorRegex)
+                if (match) {
+                    return match[0]
+                }
+            }
+            const poachURL = () => {
+                // poach url will clean the url and close the preiew
+                const match = window.location.href.match(urlBaseRegex)
+                if (match) {
+                    history.pushState('', '', match[0])
+                    closeRecipe();
+                }
+            }
+            const closeRecipe = () => {
+                previewContainer.style.display = 'none'; 
+            }
+        </script>
+    </body>
+</html>

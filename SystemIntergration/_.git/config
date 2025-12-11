@@ -1,0 +1,8 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = https://gitlab.comp.dkit.ie/D00264604/testsandintegration.git
+	fetch = +refs/heads/*:refs/remotes/origin/*

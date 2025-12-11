@@ -1,0 +1,104 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+* {
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #070707;
+	color: white;
+}
+main {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	min-height: 100dvh;
+	max-height: 100dvh;
+	z-index: 10;
+
+	display: flex;
+	flex-direction: column;
+}
+
+#background_gradient {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100dvh;
+	transform: matrix(-1, 0, -0, -1, 0, -0);
+	background: linear-gradient(
+		to bottom,
+		rgba(255, 0, 0, 0.1911648350128062) 0%,
+		rgba(0, 0, 0, 0) 100%
+	);
+	border-radius: 0px;
+	z-index: -10;
+}
+
+#background_image,
+#background_image_blur {
+	background-image: url('$lib/assets/images/background_blur.webp');
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100dvh;
+	z-index: -20;
+}
+
+#background_image {
+	background-image: url('$lib/assets/images/background.webp');
+}
+#background_image_blur {
+	background-image: url('$lib/assets/images/background_blur.webp');
+}
+
+#background_darken {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100dvh;
+	background: rgba(0, 0, 0, 0.817831544178029);
+	z-index: -5;
+}
+
+.slider {
+	-webkit-appearance: none;
+	width: 8em;
+	height: 0.2em;
+	border-radius: 5px;
+	background: #262626;
+	padding-left: 0.4em;
+	padding-right: 0.4em;
+	outline: none;
+}
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 0.7em;
+	height: 0.7em;
+	border-radius: 100%;
+	background-color: white;
+	cursor: pointer;
+}
+
+nav ul li a.current {
+	color: white;
+}
+nav ul li a {
+	cursor: pointer;
+	color: #888888;
+	transition: 0.3s all ease-in-out;
+}
+
+nav ul li a:hover {
+	color: white;
+}

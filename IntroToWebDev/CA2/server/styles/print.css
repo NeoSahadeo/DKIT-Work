@@ -1,0 +1,18 @@
+nav {
+    display: none;
+}
+iframe {
+    display: none;
+}
+footer {
+    margin-top: auto;
+}
+#footerLinks {
+    display: none;
+}
+audio {
+    display: none;
+}
+.title::after {
+    display: none;
+}

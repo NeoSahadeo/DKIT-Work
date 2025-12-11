@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Form LocalStorage</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Form with Local Storage: Page 2</h1>
+        <h1><u>READING from</u> LOCAL STORAGE</h1>
+      </header>
+      <article>
+        <h2>
+          Saving the Form Information into the Browser Memory: LOCAL STORAGE
+        </h1>
+        <div>
+        <label>Your Name:</label>
+        <span id="name"></span>
+        </div>
+        <div>
+        <label>Your Password:</label>
+        <span id="password"></span>
+        </div>
+      </article>
+
+      <footer>
+        &copy;
+        <script>
+          var rightNow = new Date();
+          var currentYear = rightNow.getFullYear();
+          document.write(currentYear);
+        </script>
+        Peter Gosling x Neo Sahadeo
+      </footer>
+    </main>
+    <script src="./scripts/local_storage.js"></script>
+    <script>
+      window.onload = () => {
+          const password = cache_control({
+            method: "get",
+            name: "password",
+          });
+          const name = cache_control({
+            method: "get",
+            name: "name",
+          });
+
+        const password_element = document.getElementById('password');
+        const name_element = document.getElementById('name');
+
+        if (password_element && name_element) {
+            name_element.innerHTML = name
+            password_element.innerHTML = password
+        }
+      }
+    </script>
+  </body>
+</html>
